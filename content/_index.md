@@ -6,4 +6,6 @@ subtitle:
   across the country into cyber security experts. For students aged 13-18, we’re
   seeking problem solvers, code crackers and, most importantly, those who never
   give up.
+open: March
+close: December
 ---
