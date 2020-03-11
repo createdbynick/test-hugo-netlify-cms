@@ -13,9 +13,12 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: text}
+  - name: "partials"
+    label: "Partials"
+    files:
       - file: "content/partials/_timeline.md"
-        label: "Partial"
-        name: "Timeline"
+        label: "Timeline"
+        name: "timeline"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: date, name: date, widget: string}
