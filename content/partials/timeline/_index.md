@@ -1,4 +1,0 @@
----
-open: March
-close: December
----
