@@ -22,9 +22,9 @@ collections:
   - name: "partials"
     label: "Partials"
     files:
-      - file: "content/partials/timeline/_index.md"
+      - file: "content/partials/timeline_.md"
         label: "Timeline"
         name: "timeline"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: date, name: date, widget: string}
+          - {label: Open, name: open, widget: string}
+          - {label: Close, name: close, widget: string}
