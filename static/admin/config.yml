@@ -11,18 +11,18 @@ collections:
         label: "Home"
         name: "home"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Title, name: title, widget: text}
           - {label: Subtitle, name: subtitle, widget: text}
       - file: "content/_contact.md"
         label: "Contact"
         name: "contact"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Title, name: title, widget: text}
           - {label: Subtitle, name: subtitle, widget: text}
   - name: "partials"
     label: "Partials"
     files:
-      - file: "content/partials/_timeline.md"
+      - file: "content/partials/timeline/_index.md"
         label: "Timeline"
         name: "timeline"
         fields:
