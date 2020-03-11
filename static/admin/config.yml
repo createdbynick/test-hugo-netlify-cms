@@ -8,8 +8,14 @@ collections:
     label: "Pages"
     files:
       - file: "content/_index.md"
-        label: "Home Page"
+        label: "Home"
         name: "home"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: text}
+      - file: "content/_contact.md"
+        label: "Contact"
+        name: "contact"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: text}
