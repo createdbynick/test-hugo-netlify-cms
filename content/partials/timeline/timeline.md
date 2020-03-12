@@ -1,4 +1,0 @@
----
-open: "Jan"
-close: "Feb"
----

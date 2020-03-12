@@ -11,20 +11,19 @@ collections:
         label: "Home"
         name: "home"
         fields:
-          - {label: Title, name: title, widget: text}
+          - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: text}
-      - file: "content/_contact.md"
-        label: "Contact"
-        name: "contact"
+          - {label: Timline Entry One, name: timelineOne, widget: string}
+          - {label: Timline Entry Two, name: timelineTwo, widget: string}
+          - {label: Quote One, name: quoteOne, widget: text}
+          - {label: Quote Two, name: quoteTwo, widget: text}
+      - file: "content/_girls.md"
+        label: "Girls"
+        name: "Girls"
         fields:
-          - {label: Title, name: title, widget: text}
+          - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: text}
-  - name: "partials"
-    label: "Partials"
-    files:
-      - file: "content/partials/timeline_.md"
-        label: "Timeline"
-        name: "timeline"
-        fields:
-          - {label: Open, name: open, widget: string}
-          - {label: Close, name: close, widget: string}
+          - {label: Timline Entry One, name: timelineOne, widget: string}
+          - {label: Timline Entry Two, name: timelineTwo, widget: string}
+          - {label: Quote One, name: quoteOne, widget: text}
+          - {label: Quote Two, name: quoteTwo, widget: text}
