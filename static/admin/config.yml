@@ -1,9 +1,19 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 collections:
+  - name: "post" 
+    label: "Post" 
+    folder: "site/content/post"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
@@ -13,10 +23,8 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: text}
-          - {label: Timline Entry One, name: timelineOne, widget: string}
-          - {label: Timline Entry Two, name: timelineTwo, widget: string}
           - {label: "Quotes", name: quotes, widget: list, fields: [
-              {label: "Quote", name: "quote", widget: "string"},
+              {label: "Quote", name: "quote", widget: "text"},
               {label: "Author", name: "author", widget: "string"}]}
       - file: "content/girls.md"
         label: "Girls"
@@ -24,8 +32,6 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: text}
-          - {label: Timline Entry One, name: timelineOne, widget: string}
-          - {label: Timline Entry Two, name: timelineTwo, widget: string}
           - {label: "Quotes", name: quotes, widget: list, fields: [
-              {label: "Quote", name: "quote", widget: "string"},
+              {label: "Quote", name: "quote", widget: "text"},
               {label: "Author", name: "author", widget: "string"}]}

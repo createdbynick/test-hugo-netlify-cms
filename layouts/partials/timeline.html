@@ -1,4 +1,6 @@
 <ul>
-    <li>{{ .timelineOne }}</li>
-    <li>{{ .timelineTwo }}</li>
+{{ range .dates }}
+    <li>{{ .date }}</li>
+    <li>{{ .description }}</li>
+{{ end }}
 </ul>
