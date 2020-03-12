@@ -15,8 +15,9 @@ collections:
           - {label: Subtitle, name: subtitle, widget: text}
           - {label: Timline Entry One, name: timelineOne, widget: string}
           - {label: Timline Entry Two, name: timelineTwo, widget: string}
-          - {label: Quote One, name: quoteOne, widget: text}
-          - {label: Quote Two, name: quoteTwo, widget: text}
+          - {label: "Quotes", name: quotes, widget: list, fields: [
+              {label: "Quote", name: "quote", widget: "string"},
+              {label: "Author", name: "author", widget: "string"}]}
       - file: "content/_girls.md"
         label: "Girls"
         name: "Girls"
@@ -25,5 +26,6 @@ collections:
           - {label: Subtitle, name: subtitle, widget: text}
           - {label: Timline Entry One, name: timelineOne, widget: string}
           - {label: Timline Entry Two, name: timelineTwo, widget: string}
-          - {label: Quote One, name: quoteOne, widget: text}
-          - {label: Quote Two, name: quoteTwo, widget: text}
+          - {label: "Quotes", name: quotes, widget: list, fields: [
+              {label: "Quote", name: "quote", widget: "string"},
+              {label: "Author", name: "author", widget: "string"}]}
