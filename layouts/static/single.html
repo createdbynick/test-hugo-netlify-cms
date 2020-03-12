@@ -1,1 +1,8 @@
-<h1>Static</h1>
+{{ define "main" }}
+
+<h1>{{ .Params.title }}</h1>
+<h2>{{ .Params.subtitle }}</h2>
+
+{{ partial "timeline.html" . }}
+
+{{ end }}
