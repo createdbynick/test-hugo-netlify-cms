@@ -18,9 +18,9 @@ collections:
           - {label: "Quotes", name: quotes, widget: list, fields: [
               {label: "Quote", name: "quote", widget: "string"},
               {label: "Author", name: "author", widget: "string"}]}
-      - file: "content/_girls.md"
+      - file: "content/girls.md"
         label: "Girls"
-        name: "Girls"
+        name: "girls"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: text}

@@ -10,4 +10,3 @@ quotes:
     - quote: "Quote 2"
       author: "Author 2"
 ---
-Hi

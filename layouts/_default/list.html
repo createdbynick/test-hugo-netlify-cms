@@ -1,5 +1,10 @@
 {{ define "main" }}
 
-<h1>List Page</h1>
+<h1>{{ .Params.title }}</h1>
+<h2>{{ .Params.subtitle }}</h2>
 
-{{end}}
+{{ partial "timeline.html" .Params }}
+
+{{ partial "quote.html" .Params }}
+
+{{ end }}
