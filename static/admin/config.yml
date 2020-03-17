@@ -18,7 +18,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
-    create: true
     files:
       - file: "content/_index.md"
         label: "Home"
