@@ -1,0 +1,57 @@
+body {
+    font-family: $font-family-body;
+    font-size: $font-size-base;
+    color: $body-text-color;
+}
+
+// Headings
+@for $i from 1 through 6 {
+    h#{$i} {
+        @include font-size(map-get($font-size-map, h#{$i}));
+        font-family: $font-family-heading;
+        margin-bottom: 20px;
+    }
+}
+
+@for $i from 1 through 6 {
+    .h#{$i} {
+        @include font-size(map-get($font-size-map, h#{$i}));
+        font-family: $font-family-heading;
+        margin-bottom: 20px;
+    }
+}
+
+// Paragraph.
+p {
+    font-size: $font-size-base;
+    line-height: $font-size-scale;
+}
+
+// Small text.
+small {
+    font-size: $font-size-small;
+}
+
+// Lists
+ul.c-list--inline {
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin-right: $spacer-2;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}
+
+ul.c-list--unstyled {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}

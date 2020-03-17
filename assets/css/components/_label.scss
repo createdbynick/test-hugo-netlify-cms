@@ -1,0 +1,30 @@
+.c-label {
+    background-color: $label-color-default;
+    border-radius: $label-border-radius;
+    display: inline-block;
+    font-size: $font-size-small;
+    padding: $spacer-1 $spacer-2;
+
+    &:not(:last-of-type) {
+        margin-right: $spacer-2;
+    }
+
+    @if ($label-text-transform == uppercase) {
+        text-transform: uppercase;
+    }
+
+    &--primary {
+        background-color: $label-color-primary;
+        color: $color-primary;
+    }
+
+    &--secondary {
+        background-color: $label-color-secondary;
+        color: $color-secondary;
+    }
+
+    &--tertiary {
+        background-color: $label-color-tertiary;
+        color: $color-tertiary;
+    }
+}

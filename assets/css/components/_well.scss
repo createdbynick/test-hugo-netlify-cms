@@ -1,0 +1,27 @@
+.c-well {
+    border-radius: $well-border-radius;
+    border-style: solid;
+    border-width: $well-border-size;
+    display: block;
+    padding: $well-padding;
+    width: 100%;
+
+    @if ($well-theme == default) {
+        border-color: $well-color-default;
+    } @else if ($well-theme == fill) {
+        background-color: $well-color-default;
+        border: 0;
+    }
+
+    &--primary {
+        @include well($well-color-primary);
+    }
+
+    &--secondary {
+        @include well($well-color-secondary);
+    }
+
+    &--tertiary {
+        @include well($well-color-tertiary);
+    }
+}

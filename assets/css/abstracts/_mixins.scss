@@ -1,0 +1,272 @@
+// Appearance
+// ** Removes default vendor styling.
+
+@mixin appearance {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+// Button reset
+// ** Resets vendor button styling.
+
+@mixin button-reset {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+}
+
+// Clearfix.
+// ** Forces element to self-clear its children.
+
+@mixin clearfix {
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+  
+    &:after {
+      clear: both;
+    }
+  }
+
+// Text contrast
+// ** Switches between white or black text depending on the color parameter.
+// ** Adheres to WCAG standards.
+
+@mixin text-contrast($n) {
+    $color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000);
+    $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+
+    @if abs($color-brightness) < ($light-color/2) {
+        color: white;
+    }
+
+    @else {
+        color: black;
+    }
+}
+
+// Button.
+// ** Default button mixin.
+
+@mixin button($background-color) {
+    @include text-contrast($background-color);
+    background-color: $background-color;
+
+    // Settings: If true transitions enabled.
+    @if ($smooth-transitions) {
+        transition: background-color $button-transition-duration;
+    }
+
+    // Settings: Button styles.
+    @if ($button-theme == "shadow") {
+        box-shadow: 0 4px 6px rgba(black, 0.1), 0 1px 3px rgba(black, 0.1);
+    }
+
+    // States.
+    &:hover {
+        background-color: darken($background-color, 10%); // TODO: Improve management of dark shades
+    }
+
+    &:focus,
+    &:active {
+        box-shadow: 0 0 0 4px lighten($background-color, 25%);
+        outline: none;
+    }
+
+    &:disabled,
+    &[disabled],
+    &.is-disabled {
+        background-color: #eee;
+        color: #ccc;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}
+
+// Button ghost.
+// ** Ghost button mixin.
+
+@mixin button-ghost($color, $border-width) {
+    background: none;
+    border: $border-width solid $color;
+    box-shadow: none;
+    color: $color;
+
+    // Settings: If true transitions enabled.
+    @if ($smooth-transitions) {
+        transition: 
+            border $button-transition-duration,
+            color $button-transition-duration;
+    }
+    
+    // States.
+    &:hover {
+        @include text-contrast($color);
+        background-color: $color;
+
+        @if ($button-theme == "shadow") {
+            box-shadow: 0 4px 6px rgba(black, 0.07), 0 1px 3px rgba(black, 0.07);
+        }
+        
+    }
+
+    &:focus,
+    &:active {
+        border: $border-width solid darken($color, 15%); // TODO: Improve management of dark shades
+        box-shadow: 0 0 0 4px lighten($color, 25%);
+    }
+
+    &:disabled,
+    &[disabled],
+    &.is-disabled {
+        background: none;
+        border: $border-width solid $color;
+        color: #ccc;
+        cursor: not-allowed;
+
+        &:hover {
+            background: none;
+            border-color: darken($color, 15%);
+            color: #ccc;
+        }
+    }
+}
+
+// Link button.
+// ** Link button mixin.
+
+@mixin button-link($color) {
+    background: none;
+    box-shadow: none;
+    color: $color;
+
+    // States
+    &:hover, &:focus, &:active {
+        @include text-contrast($color);
+        background: $color;
+    }
+
+    &:focus,
+    &:active {
+        box-shadow: 0 0 0 4px lighten($link-color, 25%);
+    }
+
+    &:disabled,
+    &[disabled],
+    &.is-disabled {
+        background-color: #eee;
+        color: #ccc;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}
+
+// Input.
+@mixin text-input($color, $border-width) {
+    border-color: $input-border-color;
+
+    // If true transitions enabled.
+    @if ($smooth-transitions) {
+        transition: 
+            border $button-transition-duration,
+            color $button-transition-duration,
+            box-shadow $button-transition-duration,
+            background-color $button-transition-duration;
+    }
+
+    // States.
+    &:hover {
+        border-color: darken($color, 20%);
+    }
+
+    &:focus,
+    &:active {
+        border-color: darken($color, 20%);
+        box-shadow: 0 0 0 4px lighten($color, 30%);
+        outline: none;
+    }
+
+    &:disabled,
+    &[disabled],
+    &.is-disabled {
+        @include placeholder-text(map-get($color-map-gray, 50));
+        background: map-get($color-map-gray, 90);
+        border-color: map-get($color-map-gray, 70);
+        pointer-events: none;
+
+        @if ($form-theme == default) {
+            box-shadow: none;
+        } @else if ($form-theme == alt) {
+            background: none;
+        }
+    }
+}
+
+// Placeholder text.
+@mixin placeholder-text($color) {
+    &::placeholder {
+        color: $color;
+        font-style: italic;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $color;
+        font-style: italic;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        font-style: italic;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        font-style: italic;
+    }
+
+    &:-moz-placeholder {
+        color: $color;
+        font-style: italic;
+    }
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+}
+
+// Well
+@mixin well($color) {
+
+    @if ($well-theme == default) {
+        border-color: $color;
+    } @else if ($well-theme == fill) {
+        @include text-contrast($color);
+        background-color: $color;
+        border-color: transparent;
+    }
+}
+
+// Alert
+@mixin alert($color) {
+    border-color: $color;
+    color: $color;
+
+    @if ($alert-theme == shadow) {
+        box-shadow: 0 10px 20px rgba(black, 0.1);
+    } @else if ($alert-theme == fill) {
+        @include text-contrast($color);
+        background-color: $color;
+        border-left-width: 0;
+    } 
+}

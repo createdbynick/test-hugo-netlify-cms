@@ -1,0 +1,275 @@
+// Transitions
+$smooth-transitions: true;
+
+// Breakpoints
+$breakpoint-small: 540px;
+$breakpoint-medium: 720px;
+$breakpoint-large: 960px;
+
+// Container width
+$container-width-max: 1540px;
+
+// Font declaration
+// -------------------------------------------------
+
+// ** Declare the fonts to be used for a target UI here.
+// ** Import fonts in the _type.scss file.
+// ** Ensure good fallbacks for each declaration.
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+$font-family-primary: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Helvetica,
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
+$font-family-secondary: 'Dosis',
+sans-serif;
+$font-family-tertiary: 'Quicksand',
+sans-serif;
+
+// Font assignment
+// -------------------------------------------------
+
+// ** Assign font-families to the UI here.
+// ** Make sure to map font sizes to the $font-size map.
+
+$font-family-body: $font-family-primary;
+$font-family-heading: $font-family-secondary;
+$font-family-button: $font-family-primary;
+
+$font-size-base: 15px;
+$font-size-small: 12px;
+$font-size-large: 26px;
+$font-size-scale: 1.333;
+
+$font-size-map: (
+  h1: 40px,
+  h2: 32px,
+  h3: 26px,
+  h4: 22px,
+  h5: 18px,
+  h6: 16px
+);
+
+$h1: map-get($font-size-map, h1);
+$h2: map-get($font-size-map, h2);
+$h3: map-get($font-size-map, h3);
+$h4: map-get($font-size-map, h4);
+$h5: map-get($font-size-map, h5);
+$h6: map-get($font-size-map, h6);
+
+// Font weights
+// -------------------------------------------------
+
+// ** The correct font weight can vary between fonts.
+// ** Ensure the correct weight by referencing imported fonts documentation.
+
+$font-weight-light: 300;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+// Brand colors
+// -------------------------------------------------
+
+// ** This is where you add brand colors for each target UI.
+// ** Make sure you map functional colors to this map.
+
+$color-map: (
+    black: #000,
+    white: #fff,
+    blue: #10B3E0,
+    blue-light:#CFF5FC,
+    blue-dark: #0C98B1,
+    red: #CC0000,
+    red-light: #FF0000,
+    red-dark: #B30000,
+    green: #0C6E4B,
+    green-light: #D1FAEB,
+    green-dark: #07402C,
+    yellow: #F5AD00,
+    yellow-light: #FFD266,
+    yellow-dark: #B37E00,
+    purple: #6C5DF4,
+    purple-light: #E9E7FD,
+    purple-dark: #201671,
+    pink: #ED4F8E,
+    pink-light: #FBDAE7,
+    pink-dark: #940F44
+);
+
+// Grays
+// -------------------------------------------------
+
+// ** A map of gray shades originating from the $color-gray-base variable.
+// ** Change the $color-gray-base variable to achieve another monochromatic mapping of a different color.
+
+$color-gray-base: #09090A;
+$color-map-gray: (
+    0: $color-gray-base,
+    10: lighten($color-gray-base, 10%),
+    20: lighten($color-gray-base, 20%),
+    30: lighten($color-gray-base, 30%),
+    40: lighten($color-gray-base, 40%),
+    50: lighten($color-gray-base, 50%),
+    60: lighten($color-gray-base, 60%),
+    70: lighten($color-gray-base, 70%),
+    80: lighten($color-gray-base, 80%),
+    90: lighten($color-gray-base, 88%),
+);
+
+// Functional colors
+// -------------------------------------------------
+
+// ** Functional colors are used primarly for buttons and states.
+// ** These should be mapped to your brand colors.
+
+$color-primary: map-get($color-map, purple);
+$color-primary-light: map-get($color-map, purple-light);
+$color-primary-dark: map-get($color-map, purple-dark);
+
+$color-secondary: map-get($color-map, blue);
+$color-secondary-light: map-get($color-map, blue-light);
+$color-secondary-dark: map-get($color-map, blue-dark);
+
+$color-tertiary: map-get($color-map, pink);
+$color-tertiary-light: map-get($color-map, pink-light);
+$color-tertiary-dark: map-get($color-map, pink-dark);
+
+$color-success: map-get($color-map, green);
+$color-success-light: map-get($color-map, green-light);
+$color-success-dark: map-get($color-map, green-dark);
+
+$color-warning: map-get($color-map, yellow);
+$color-warning-light: map-get($color-map, yellow-light);
+$color-warning-dark: map-get($color-map, yellow-dark);
+
+$color-danger: map-get($color-map, red);
+$color-danger-light: map-get($color-map, red-light);
+$color-danger-dark: map-get($color-map, red-dark);
+
+// Main
+// -------------------------------------------------
+
+$body-text-color: map-get($color-map-gray, 10);
+$body-bg-color: white;
+$link-color: $color-primary;
+$link-text-decoration: false;
+
+// Spacers
+// -------------------------------------------------
+
+// ** Keep spacing consistent across the UI.
+// ** If you need to add new pairings make sure to also create a variable mapped to it below.
+
+$spacer-map: (
+    0: 0,
+    1: 4px,
+    2: 8px,
+    3: 16px,
+    4: 32px,
+    5: 64px,
+);
+
+$spacer-0: map-get($spacer-map, 0);
+$spacer-1: map-get($spacer-map, 1);
+$spacer-2: map-get($spacer-map, 2);
+$spacer-3: map-get($spacer-map, 3);
+$spacer-4: map-get($spacer-map, 4);
+$spacer-5: map-get($spacer-map, 5);
+
+// Buttons
+$button-theme: default; // default | shadow
+
+$button-height: 42px;
+$button-height-small: 28px;
+$button-height-large: 48px;
+
+$button-padding: 16px;
+$button-padding-small: 10px;
+$button-padding-large: 22px;
+
+$button-radius: 6px;
+
+$button-font-size: 16px;
+$button-font-size-small: 14px;
+$button-font-size-large: 22px;
+
+$button-color-success: $color-success;
+$button-color-warning: $color-warning;
+$button-color-danger: $color-danger;
+
+$button-color-default: map-get($color-map-gray, 70);
+$button-color-primary: $color-primary;
+$button-color-secondary: $color-secondary;
+$button-color-tertiary: $color-tertiary;
+
+$button-border-width: 1px;
+
+$button-transition-duration: 0.2s;
+
+// Forms
+$form-theme: default !default; // default | alt | shadow
+
+$input-height: 42px;
+$input-height-small: 28px;
+$input-height-large: 54px;
+
+$input-padding: 12px;
+$input-padding-small: 8px;
+$input-padding-large: 22px;
+
+$input-radius: 6px;
+
+$input-font-size: 16px;
+$input-font-size-small: 14px;
+$input-font-size-large: 22px;
+
+$input-border-width: 1px;
+
+$input-border-color: map-get($color-map-gray, 70);
+$input-valid-border-color: map-get($color-map, green);
+$input-invalid-border-color: map-get($color-map, red);
+
+// Labels
+$label-text-transform: uppercase;
+
+$label-border-radius: 20px;
+
+$label-color-default: map-get($color-map-gray, 70);
+$label-color-primary: $color-primary-light;
+$label-color-secondary: $color-secondary-light;
+$label-color-tertiary: $color-tertiary-light;
+
+// Alerts
+$alert-theme: default; // default | fill | shadow
+
+$alert-padding: 12px;
+
+$alert-color-default: map-get($color-map-gray, 70);
+$alert-color-success: $color-success;
+$alert-color-warning: $color-warning;
+$alert-color-danger: $color-danger;
+
+$alert-radius: 6px;
+
+$alert-border-width: 2px;
+
+// Wells
+$well-theme: default; // default | fill 
+
+$well-padding: $spacer-4;
+
+$well-border-radius: 6px;
+$well-border-size: 2px;
+
+$well-color-default: map-get($color-map-gray, 80);
+$well-color-primary: $color-primary;
+$well-color-secondary: $color-secondary;
+$well-color-tertiary: $color-tertiary;

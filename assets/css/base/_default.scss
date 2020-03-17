@@ -1,0 +1,19 @@
+body {
+    background-color: $body-bg-color;
+}
+
+a {
+    color: $link-color;
+    
+    // Settings: If true text is underlined.
+    @if ($link-text-decoration) {
+        text-decoration: underline;
+    } @else {
+        text-decoration: none;
+    }
+
+    // Settings: If true transitions enabled.
+    @if ($smooth-transitions) {
+        transition: color $button-transition-duration;
+    } 
+}

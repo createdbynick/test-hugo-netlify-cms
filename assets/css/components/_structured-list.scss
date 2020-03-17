@@ -1,0 +1,26 @@
+.c-structured-list {
+
+}
+
+.c-structured-list__head {
+    border-bottom: 2px solid map-get($color-map-gray, 70);
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacer-2;
+    padding: 0 0 $spacer-2;
+}
+
+.c-structured-list__body {
+    padding: $spacer-2 0;
+
+    .layout {
+        margin-bottom: $spacer-3;
+    }
+}
+
+.c-structured-list--border {
+    .c-structured-list__body {
+        >.row {
+            border-bottom: 1px solid map-get($color-map-gray, 80);
+        }
+    }
+}

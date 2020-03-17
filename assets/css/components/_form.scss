@@ -1,0 +1,197 @@
+.c-form-item {
+    margin-bottom: $spacer-3;
+    width: 100%;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Input label
+.c-form-label {
+    display: inline-block;
+    font-size: $input-font-size-small;
+    font-weight: $font-weight-medium;
+    margin-bottom: $spacer-2;
+}
+
+// Inputs
+.c-form-input {
+    @include placeholder-text(map-get($color-map-gray, 50));
+    @include text-input($input-border-color, $input-border-width);
+    border-color: $input-border-color;
+    border-radius: $input-radius;
+    border-style: solid;
+    border-width: $input-border-width;
+    box-sizing: border-box;
+    display: block;
+    min-height: $input-height;
+    padding: 0 $input-padding;
+    width: 100%;
+
+    // Input styles
+    @if ($form-theme == shadow) {
+        box-shadow: inset 0 2px 4px rgba(black, 0.1);
+    } @else if ($form-theme == alt) {
+        @include text-input($input-border-color, $input-border-width);
+        background: none;
+        border-bottom-width: 1px;
+        border-radius: 0;
+        border-width: 0;
+        min-height: $input-height;
+        padding: 0 $input-padding;
+
+        &:focus {
+            background-color: map-get($color-map, white);
+            border-bottom-color: $link-color;
+            box-shadow: none;
+        }
+
+        // TODO: Replace propertypes above with a new mixin for alternative styles using if else statements
+    }
+
+    // Sizes
+    &--small {
+        font-size: $input-font-size-small;
+        min-height: $input-height-small;
+        padding: 0 $input-padding-small;
+    }
+
+    &--large {
+        font-size: $input-font-size-large;
+        min-height: $input-height-large;
+        padding: 0 $input-padding-large;
+    }
+
+    // Validation
+    &.is-invalid {
+        @include placeholder-text($input-invalid-border-color);
+        @include text-input($color-danger, $input-border-width);
+        border-color: $input-invalid-border-color;
+
+        @if ($form-theme == alt) {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &.is-valid {
+        @include placeholder-text($input-valid-border-color);
+        @include text-input($color-success, $input-border-width);
+        border-color: $input-valid-border-color;
+
+        @if ($form-theme == alt) {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        // TODO: Replace propertypes above with a new mixin for alternative styles using if else statement
+    }
+}
+
+textarea.c-form-input {
+    padding: $input-padding;
+}
+
+.c-form-input--inline {
+    display: inline-block;
+}
+
+// Radio and checkbox
+.c-form-radio,
+.c-form-checkbox {
+  @include clearfix;
+
+  // Input
+  .c-form-radio-input,
+  .c-form-checkbox-input {
+    left: -9999px;
+    position: absolute;
+  }
+
+  // Label
+  .c-form-radio-label,
+  .c-form-checkbox-label {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5;
+    padding: 0 24px 0;
+    position: relative;
+    width: 100%;
+  }
+
+  // Indicator
+  .c-form-radio-label::before,
+  .c-form-checkbox-label::before {
+    border: solid 2px $color-primary;
+    content: "";
+    display: block;
+    height: $font-size-base;
+    left: 0;
+    position: absolute;
+    top: calc(50% - #{$font-size-base}/2);
+    width: $font-size-base;
+  }
+
+  // Hover
+  .c-form-radio-label:hover,
+  .c-form-checkbox-label:hover {
+    color: $color-primary;
+    transition: all 0.5s ease;
+
+    &::before {
+      border: solid 2px $color-primary;
+    }
+  }
+
+  // Checked
+  .c-form-radio-input:checked ~ .c-form-radio-label::before,
+  .c-form-checkbox-input:checked ~ .c-form-checkbox-label::before {
+    background: $color-primary;
+    border: solid 2px $color-primary;
+    transition: all 0.5s ease;
+  }
+
+  // Disabled
+  .c-form-radio-input:disabled ~ .c-form-radio-label,
+  .c-form-checkbox-input:disabled ~ .c-form-checkbox-label {
+    color: gray;
+    font-style: italic;
+    pointer-events: none;
+  }
+}
+
+// Just radio
+.c-form-radio {
+
+  // Indicator
+  .c-form-radio-label::before {
+    border-radius: 50px;
+  }
+}
+
+// Select
+.c-form-select {
+    @include appearance;
+    @include text-input($input-border-color, $input-border-width);
+    background: rgba($input-border-color, 0.1);
+    border-radius: $input-radius;
+    display: block;
+    padding: $spacer-2;
+    width: 100%;
+
+    // Select, option.
+    .c-select-option {
+        padding: $spacer-1;
+      }
+
+    // Select, option, checked
+    &.c-form-select--multiple .c-select-option:checked,
+    &.c-form-select--multiple:focus .c-select-option:checked {
+      // Linear gradient hack to color the selected options. Ugh.
+      @include text-contrast($input-border-color);
+      background: $color-primary linear-gradient(0deg, $color-primary 0%, $color-primary 100%);
+    }
+}

@@ -1,0 +1,162 @@
+// Linking
+.h-fake-link {
+    cursor: pointer;
+}
+
+
+// Padding.
+@each $name,
+$value in $spacer-map {
+    .h-p-#{$name} {
+        padding: $value !important;
+    }
+}
+
+// Padding X.
+@each $name,
+$value in $spacer-map {
+    .h-px-#{$name} {
+        padding: 0 $value !important;
+    }
+}
+
+// Padding Y.
+@each $name,
+$value in $spacer-map {
+    .h-py-#{$name} {
+        padding: $value 0 !important;
+    }
+}
+
+// Padding left.
+@each $name,
+$value in $spacer-map {
+    .h-pl-#{$name} {
+        padding-left: $value !important;
+    }
+}
+
+// Padding right.
+@each $name,
+$value in $spacer-map {
+    .h-pr-#{$name} {
+        padding-right: $value !important;
+    }
+}
+
+// Padding top.
+@each $name,
+$value in $spacer-map {
+    .h-pt-#{$name} {
+        padding-top: $value !important;
+    }
+}
+
+// Padding bottom.
+@each $name,
+$value in $spacer-map {
+    .h-pb-#{$name} {
+        padding-bottom: $value !important;
+    }
+}
+
+// Margin.
+@each $name,
+$value in $spacer-map {
+    .h-m-#{$name} {
+        margin: $value !important;
+    }
+}
+
+// Margin X.
+@each $name,
+$value in $spacer-map {
+    .h-mx-#{$name} {
+        margin: 0 $value !important;
+    }
+}
+
+// Margin Y.
+@each $name,
+$value in $spacer-map {
+    .h-my-#{$name} {
+        margin: $value 0 !important;
+    }
+}
+
+// Margin left.
+@each $name,
+$value in $spacer-map {
+    .h-ml-#{$name} {
+        margin-left: $value !important;
+    }
+}
+
+// Margin right.
+@each $name,
+$value in $spacer-map {
+    .h-mr-#{$name} {
+        margin-right: $value !important;
+    }
+}
+
+// Margin top.
+@each $name,
+$value in $spacer-map {
+    .h-mt-#{$name} {
+        margin-top: $value !important;
+    }
+}
+
+// Margin bottom.
+@each $name,
+$value in $spacer-map {
+    .h-mb-#{$name} {
+        margin-bottom: $value !important;
+    }
+}
+
+// Text colors.
+@each $name,
+$value in $color-map {
+    .h-text-#{$name} {
+        color: $value !important;
+    }
+}
+
+@each $name,
+$value in $color-map-gray {
+    .h-text-#{$name} {
+        color: $value !important;
+    }
+}
+
+// Background colors.
+@each $color,
+$bgcolor in $color-map {
+    .h-bg-#{$color} {
+        background-color: $bgcolor !important;
+    }
+}
+
+// Alignment.
+.h-text-center {
+    text-align: center !important;
+}
+
+.h-text-left {
+    text-align: left !important;
+}
+
+.h-text-right {
+    text-align: right !important;
+}
+
+// Image shapes.
+.h-circle {
+    border-radius: 50%;
+}
+
+.h-rounded {
+    border-radius: 6px;
+}

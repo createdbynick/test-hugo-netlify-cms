@@ -1,0 +1,133 @@
+// Buttons
+.c-btn {
+    @include button-reset;
+    @include text-contrast($button-color-primary);
+    @include button($button-color-default);
+    align-items: center;
+    border-radius: $button-radius;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-family: $font-family-button;
+    font-weight: $font-weight-medium;
+    justify-content: center;
+    min-height: $button-height;
+    padding: 0 $button-padding;
+    text-align: center;
+    text-decoration: none;
+
+    &:not(:last-of-type) {
+        margin-right: $spacer-3;
+    }
+
+    // Button sizes
+    &--small {
+        font-size: $button-font-size-small;
+        line-height: 1;
+        min-height: $button-height-small;
+        padding: 0 $button-padding-small;
+    }
+
+    &--large {
+        font-size: $button-font-size-large;
+        min-height: $button-height-large;
+        padding: 0 $button-padding-large;
+    }
+
+    &--block {
+        display: flex;
+        width: 100%;
+    }
+
+    // Link button style.
+    &--link {
+        @include button-link($button-color-default);
+    }
+
+    &--link-success {
+        @include button-link($button-color-success);
+    }
+
+    &--link-warning {
+        @include button-link($button-color-warning);
+    }
+
+    &--link-danger {
+        @include button-link($button-color-danger);
+    }
+
+    &--link-primary {
+        @include button-link($button-color-primary);
+    }
+
+    &--link-secondary {
+        @include button-link($button-color-secondary);
+    }
+
+    &--link-tertiary {
+        @include button-link($button-color-tertiary);
+    }
+
+    // Default button style.
+    &--success {
+        @include button($button-color-success);
+    }
+
+    &--warning {
+        @include button($button-color-warning);
+    }
+
+    &--danger {
+        @include button($button-color-danger);
+    }
+
+    &--primary {
+        @include button($button-color-primary);
+    }
+
+    &--secondary {
+        @include button($button-color-secondary);
+    }
+
+    &--tertiary {
+        @include button($button-color-tertiary);
+    }
+
+    // Ghost button style.
+    &--ghost {
+        @include button-ghost($button-color-default, $button-border-width)
+    }
+
+    &--ghost-success {
+        @include button-ghost($button-color-success, $button-border-width)
+    }
+
+    &--ghost-warning {
+        @include button-ghost($button-color-warning, $button-border-width)
+    }
+
+    &--ghost-danger {
+        @include button-ghost($button-color-danger, $button-border-width)
+    }
+
+    &--ghost-primary {
+        @include button-ghost($button-color-primary, $button-border-width)
+    }
+
+    &--ghost-secondary {
+        @include button-ghost($button-color-secondary, $button-border-width)
+    }
+
+    &--ghost-tertiary {
+        @include button-ghost($button-color-tertiary, $button-border-width)
+    }
+
+}
+
+// Button icon
+.c-btn__icon {
+    fill: currentColor;
+
+    &:not(:first-child) {
+        margin-right: 0;
+    }
+}
