@@ -6,4 +6,8 @@
 	<meta property="og:title" content="">
 	<meta property="og:url" content="">
 	<meta property="og:image" content="">
+
+	{{ $style := resources.Get "css/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+
 </head>
