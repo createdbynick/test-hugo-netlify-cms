@@ -24,6 +24,6 @@ collections:
         fields:
           - {label: Title, name: title, widget: text}
           - {label: Subtitle, name: subtitle, widget: text}
-          - {label: Headine One Title, name: headingOnetitle, widget: text}
+          - {label: Headine One Title, name: headingOneTitle, widget: text}
           - {label: Heading One Description, name: headingOneDescription, widget: text}
           
