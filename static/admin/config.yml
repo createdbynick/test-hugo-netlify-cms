@@ -23,6 +23,6 @@ collections:
         name: "home"
         fields:
           - {label: Header, name: header, widget: object, fields: [{label: Title, name: headerTitle, widget: text}, {label: Subtitle, name: headerSubtitle, widget: text}]}
-          - {label: Heading, name: heading, widget: object, fields: [{label: Heading, name: headingOneTitle, widget: text}, {label: Heading Description, name: headingOneDescription, widget: text}]}
+          - {label: Heading One, name: headingOne, widget: object, fields: [{label: Heading, name: headingOneTitle, widget: text}, {label: Heading Description, name: headingOneDescription, widget: text}]}
 
           
