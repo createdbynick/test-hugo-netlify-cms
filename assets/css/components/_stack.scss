@@ -1,0 +1,20 @@
+.c-stack {
+    display: flex;
+    margin-top: $spacer-5;
+
+    // Left.
+    &__left {
+        flex-basis: 50%;
+        margin-right: $spacer-4;
+    }
+
+    // Right
+    &__right {
+        flex-basis: 50%;
+        margin-left: $spacer-4;
+    }
+
+    img.c-stack--image {
+        border-radius: $border-radius;
+    }
+}

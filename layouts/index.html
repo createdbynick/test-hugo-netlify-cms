@@ -4,86 +4,120 @@
     CMS.registerPreviewStyle("http://localhost:1313/css/main.min.398d9e5640a08eb09549e39998025cf1ec3da294c8882472e7a043c2d6c25e9a.css");
 </script>
 
-<h1>{{ .Params.title }}</h1>
-<h2>{{ .Params.subtitle }}</h2>
-
-<h3>Quotes</h3>
-{{ partial "quote.html" .Params }}
-
-<form>
-    <div class="c-form-item">
-        <label for="text-input-1" class="c-form-label">Full name</label>
-        <input type="text" id="text-input-1" class="c-form-input" placeholder="Jean Luc Picard">
+<div class="c-header">
+    <div class="c-header__logo">
+        <img src="media/images/logo-cyber-discovery.svg" width="320">
     </div>
 
-    <div class="c-form-item">
-        <label for="text-input-1" class="c-form-label">Personal description</label>
-        <textarea id="text-area-1" class="c-form-input" placeholder="Captain of the USS Enterprise"></textarea>
+    <div class="c-header__title">
+        <h1>{{ .Params.title }}</h1>
     </div>
 
-    <div class="c-form-item" role="radiogroup">
-        <label for="text-input-1" class="c-form-label">Prefered tea</label>
-        <div class="c-form-radio">
-            <input class="c-form-radio-input" id="radio-option-one" type="radio" name="radio-option"
-                value="radio-option-one" checked="checked">
-            <label class="c-form-radio-label" for="radio-option-one">Earl Grey</label>
+    <div class="c-header__subtitle">
+        <p>{{ .Params.subtitle }}</p>
+    </div>
+
+    <div class="c-header__subtitle">
+        <button class="c-btn c-btn--large c-btn--primary">Register your interest for next year</button>
+    </div>
+</div>
+
+<div class="l-paper l-paper--no-border-bottom">
+    <div class="c-heading">
+        <div class="c-heading__title">
+            <h2>{{ .Params.headingOneTitle }}</h2>
         </div>
-        <div class="c-form-radio">
-            <input class="c-form-radio-input" id="radio-option-two" type="radio" name="radio-option"
-                value="radio-option-two">
-            <label class="c-form-radio-label" for="radio-option-two">Peppermint</label>
+        <div class="c-heading__body">
+            <p>{{ .Params.headingOneDescription }}</p>
         </div>
     </div>
 
-    <div class="c-form-item">
-        <label for="text-input-1" class="c-form-label">Do you have any enemies?</label>
-        <div class="c-form-checkbox">
-            <input class="c-form-checkbox-input" id="checkbox-option-one" type="checkbox"
-                name="checkbox-option" value="checkbox-option-one">
-            <label class="c-form-checkbox-label" for="checkbox-option-one">Vulcans</label>
-        </div>
-        <div class="c-form-checkbox">
-            <input class="c-form-checkbox-input" id="checkbox-option-two" type="checkbox"
-                name="checkbox-option" value="checkbox-option-two">
-            <label class="c-form-checkbox-label" for="checkbox-option-two">Klingons</label>
-        </div>
-        <div class="c-form-checkbox">
-            <input class="c-form-checkbox-input" id="checkbox-option-three" type="checkbox"
-                name="checkbox-option" value="checkbox-option-three" checked="true">
-            <label class="c-form-checkbox-label" for="checkbox-option-three">Borg</label>
-        </div>
-        <div class="c-form-checkbox">
-            <input class="c-form-checkbox-input" id="checkbox-option-four" type="checkbox"
-                name="checkbox-option" value="checkbox-option-four">
-            <label class="c-form-checkbox-label" for="checkbox-option-four">Humans</label>
-        </div>
-    </div>
+    {{ range .Params.stacks }}
+    <div class="c-stack">
+        <div class="c-stack__left">
+            <h3>{{ .stackTitle }}</h3>
 
-    <div class="c-form-item">
-        <label class="c-form-label" for="field-select">Favorite captain</label>
-        <select class="c-form-select" id="field-select" name="field-select">
-            <option class="c-select-option">Pike</option>
-            <option class="c-select-option">Kirk</option>
-            <option class="c-select-option">Picard</option>
-            <option class="c-select-option">Janeway</option>
-            <option class="c-select-option">Archer</option>
-        </select>
-    </div>
+            <p>
+                {{ .stackDescription }}
+            </p>
+        </div>
 
-    <div class="c-form-item">
-        <label for="field-select-multiple" class="c-form-label">Favorite color</label>
-        <select id="field-select-multiple" name="field-select-multiple"
-            class="c-form-select c-form-select--multiple" multiple>
-            <option class="c-select-option">Red</option>
-            <option class="c-select-option">Yellow</option>
-            <option class="c-select-option">Green</option>
-            <option class="c-select-option">Blue</option>
-        </select>
+        <div class="c-stack__right">
+            <img src="media/images/elite-students-hands-on.png" class="c-stack--image">
+        </div>
     </div>
+    {{ end }}
 
-    <div class="c-form-item">
-        <input type="submit" id="submit" class="c-btn c-btn--primary" value="Submit Button">
+
+</div>
+
+<div class="l-paper l-paper--dark l-paper--no-border-top">
+    <div class="c-timeline">
+        <div class="c-timeline-event">
+            <div class="c-timeline__title">
+                <h4>CyberStart Assess</h4>
+            </div>
+
+            <div class="c-timeline__date">
+                <p>3rd September – 25th October 2019</p>
+            </div>
+
+            <div class="c-timeline__description">
+                <p>
+                    Put your problem-solving skills to the test with a range of fun, interactive challenges where you’ll try out cracking codes and solving tricky problems.
+                </p>
+            </div>
+        </div>
+
+        <div class="c-timeline-event">
+            <div class="c-timeline__title">
+                <h4>CyberStart Assess</h4>
+            </div>
+
+            <div class="c-timeline__date">
+                <p>3rd September – 25th October 2019</p>
+            </div>
+
+            <div class="c-timeline__description">
+                <p>
+                    Put your problem-solving skills to the test with a range of fun, interactive challenges where you’ll try out cracking codes and solving tricky problems.
+                </p>
+            </div>
+        </div>
+
+        <div class="c-timeline-event">
+            <div class="c-timeline__title">
+                <h4>CyberStart Assess</h4>
+            </div>
+
+            <div class="c-timeline__date">
+                <p>3rd September – 25th October 2019</p>
+            </div>
+
+            <div class="c-timeline__description">
+                <p>
+                    Put your problem-solving skills to the test with a range of fun, interactive challenges where you’ll try out cracking codes and solving tricky problems.
+                </p>
+            </div>
+        </div>
+
+        <div class="c-timeline-event">
+            <div class="c-timeline__title">
+                <h4>CyberStart Assess</h4>
+            </div>
+
+            <div class="c-timeline__date">
+                <p>3rd September – 25th October 2019</p>
+            </div>
+
+            <div class="c-timeline__description">
+                <p>
+                    Put your problem-solving skills to the test with a range of fun, interactive challenges where you’ll try out cracking codes and solving tricky problems.
+                </p>
+            </div>
+        </div>
     </div>
-</form>
+</div>
+
 
 {{ end }}

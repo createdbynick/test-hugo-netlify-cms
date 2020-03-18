@@ -7,7 +7,7 @@ $breakpoint-medium: 720px;
 $breakpoint-large: 960px;
 
 // Container width
-$container-width-max: 1540px;
+$container-width-max: 1000px;
 
 // Font declaration
 // -------------------------------------------------
@@ -40,17 +40,17 @@ sans-serif;
 // ** Assign font-families to the UI here.
 // ** Make sure to map font sizes to the $font-size map.
 
-$font-family-body: $font-family-primary;
+$font-family-body: $font-family-secondary;
 $font-family-heading: $font-family-secondary;
-$font-family-button: $font-family-primary;
+$font-family-button: $font-family-secondary;
 
-$font-size-base: 15px;
+$font-size-base: 20px;
 $font-size-small: 12px;
 $font-size-large: 26px;
-$font-size-scale: 1.333;
+$font-size-scale: 1.4;
 
 $font-size-map: (
-  h1: 40px,
+  h1: 58px,
   h2: 32px,
   h3: 26px,
   h4: 22px,
@@ -84,24 +84,31 @@ $font-weight-bold: 600;
 $color-map: (
     black: #000,
     white: #fff,
-    blue: #10B3E0,
-    blue-light:#CFF5FC,
-    blue-dark: #0C98B1,
-    red: #CC0000,
-    red-light: #FF0000,
-    red-dark: #B30000,
-    green: #0C6E4B,
-    green-light: #D1FAEB,
-    green-dark: #07402C,
-    yellow: #F5AD00,
-    yellow-light: #FFD266,
-    yellow-dark: #B37E00,
-    purple: #6C5DF4,
-    purple-light: #E9E7FD,
-    purple-dark: #201671,
-    pink: #ED4F8E,
-    pink-light: #FBDAE7,
-    pink-dark: #940F44
+    blue: #286fa0,
+    blue-light:#3084c0,
+    blue-dark: #205981,
+    blue-superdark: #0d2332,
+    blue-uberdark: #091823,
+    red: #c04b4e,
+    red-light: #ca686b,
+    red-dark: #a93b3e,
+    green: #4ea550,
+    green-light: #64b666,
+    green-dark: #418a43,
+    yellow: #d38e00,
+    yellow-light: #faa900,
+    yellow-dark: #ac7400,
+    purple: #705a8f,
+    purple-light: #836da3,
+    purple-dark: #5d4b77,
+    pink: #c28699,
+    pink-light: #cfa0af,
+    pink-dark: #b56c83,
+    gray: #98a9ba,
+    gray-light: #bbc7d1,
+    gray-dark: #8196aa,
+    gray-darkest: #6a829a,
+    gray-uberdark: #495b6c
 );
 
 // Grays
@@ -157,8 +164,8 @@ $color-danger-dark: map-get($color-map, red-dark);
 // Main
 // -------------------------------------------------
 
-$body-text-color: map-get($color-map-gray, 10);
-$body-bg-color: white;
+$body-text-color: map-get($color-map, gray-dark);
+$body-bg-color: map-get($color-map, blue-superdark);
 $link-color: $color-primary;
 $link-text-decoration: false;
 
@@ -184,12 +191,19 @@ $spacer-3: map-get($spacer-map, 3);
 $spacer-4: map-get($spacer-map, 4);
 $spacer-5: map-get($spacer-map, 5);
 
+// Radii
+
+$border-radius-small: 5px;
+$border-radius-medium: 10px;
+$border-radius-large: 15px;
+$border-radius: $border-radius-medium;
+
 // Buttons
 $button-theme: default; // default | shadow
 
 $button-height: 42px;
 $button-height-small: 28px;
-$button-height-large: 48px;
+$button-height-large: 62px;
 
 $button-padding: 16px;
 $button-padding-small: 10px;
@@ -199,7 +213,7 @@ $button-radius: 6px;
 
 $button-font-size: 16px;
 $button-font-size-small: 14px;
-$button-font-size-large: 22px;
+$button-font-size-large: 18px;
 
 $button-color-success: $color-success;
 $button-color-warning: $color-warning;

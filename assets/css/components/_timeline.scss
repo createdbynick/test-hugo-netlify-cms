@@ -1,0 +1,19 @@
+.c-timeline {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: $spacer-5;
+    max-width: 500px;
+    
+    // Event.
+    .c-timeline-event {
+        padding: $spacer-4;
+        background-color: map-get($color-map, white);
+        border-radius: $border-radius;
+
+        &:not(:last-child) {
+            margin-bottom: $spacer-3;
+        }
+    }
+
+}
