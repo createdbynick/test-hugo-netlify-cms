@@ -24,6 +24,11 @@ collections:
         fields:
           - {label: Title, name: title, widget: text}
           - {label: Subtitle, name: subtitle, widget: text}
-          - {label: Headine One Title, name: headingOneTitle, widget: text}
-          - {label: Heading One Description, name: headingOneDescription, widget: text}
+          - label: Heading
+            name: heading
+            widget: object
+            fields:
+              - {label: Headine One Title, name: headingOneTitle, widget: text}
+              - {label: Heading One Description, name: headingOneDescription, widget: text}
+
           

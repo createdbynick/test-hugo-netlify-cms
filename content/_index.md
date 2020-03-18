@@ -9,9 +9,4 @@ stacks:
     stackDescription: "Cyber Discovery is for everyone. Whether you’re already a white-hat hacker in training or you’ve never touched a keyboard before, you could be just the person we’re looking for. You’ll start by testing your natural creativity, problem solving ability, and curiosity. Then, take on the role of a security agent to crack codes and stop cyber criminals in their tracks."
   - stackTitle: "Free for everyone"
     stackDescription: "Cyber Discovery is for everyone. Whether you’re already a white-hat hacker in training or you’ve never touched a keyboard before, you could be just the person we’re looking for. You’ll start by testing your natural creativity, problem solving ability, and curiosity. Then, take on the role of a security agent to crack codes and stop cyber criminals in their tracks."
-dates:
-  - date: "Date 1"
-    description: "Description 1"
-  - date: "Date 2"
-    description: "Description 2"
 ---
