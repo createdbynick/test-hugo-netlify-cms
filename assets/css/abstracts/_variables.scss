@@ -16,8 +16,7 @@ $container-width-max: 1000px;
 // ** Import fonts in the _type.scss file.
 // ** Ensure good fallbacks for each declaration.
 
-@import url('https://fonts.googleapis.com/css?family=Dosis');
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500&display=swap');
 
 $font-family-primary: -apple-system,
 BlinkMacSystemFont,
@@ -50,7 +49,7 @@ $font-size-large: 26px;
 $font-size-scale: 1.4;
 
 $font-size-map: (
-  h1: 58px,
+  h1: 56px,
   h2: 32px,
   h3: 26px,
   h4: 22px,
@@ -72,8 +71,8 @@ $h6: map-get($font-size-map, h6);
 // ** Ensure the correct weight by referencing imported fonts documentation.
 
 $font-weight-light: 300;
-$font-weight-medium: 500;
-$font-weight-bold: 600;
+$font-weight-medium: 400;
+$font-weight-bold: 500;
 
 // Brand colors
 // -------------------------------------------------
@@ -99,6 +98,7 @@ $color-map: (
     yellow-light: #faa900,
     yellow-dark: #ac7400,
     purple: #705a8f,
+    purple-lightest: #9885B2,
     purple-light: #836da3,
     purple-dark: #5d4b77,
     pink: #c28699,

@@ -5,25 +5,14 @@ body {
 }
 
 // Headings
-
-h1 {
-    margin-bottom: 15px;
-    color: map-get($color-map, grey-uberdark);
-    font-family: $font-family-heading;
-    font-size: $h1;
-    font-weight: $font-weight-bold;
-    font-weight: $font-weight-medium;
-}
-
-@for $i from 2 through 6 {
+@for $i from 1 through 6 {
     h#{$i} {
         @include font-size(map-get($font-size-map, h#{$i}));
         margin-bottom: 15px;
         color: map-get($color-map, gray-uberdark);
         font-family: $font-family-heading;
-        font-weight: $font-weight-bold;
-        -webkit-font-smoothing: antialiased;
-	    -moz-osx-font-smoothing: grayscale;
+        font-weight: $font-weight-medium;
+        
     }
 }
 
@@ -33,9 +22,7 @@ h1 {
         margin-bottom: 15px;
         color: map-get($color-map, black);
         font-family: $font-family-heading;
-        font-weight: $font-weight-bold;
-        -webkit-font-smoothing: antialiased;
-	    -moz-osx-font-smoothing: grayscale;
+        font-weight: $font-weight-medium;
     }
 }
 

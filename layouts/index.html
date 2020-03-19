@@ -32,13 +32,13 @@
         </div>
     </div>
 
-    {{ range .Params.stacks }}
+    
     <div class="c-stack">
         <div class="c-stack__left">
-            <h3>{{ .stackTitle }}</h3>
+            <h3>{{ .Params.stackTitleOne }}</h3>
 
             <p>
-                {{ .stackDescription }}
+                {{ .Params.stackDescriptionOne }}
             </p>
         </div>
 
@@ -46,76 +46,44 @@
             <img src="media/images/elite-students-hands-on.png" class="c-stack--image">
         </div>
     </div>
-    {{ end }}
 
+    <div class="c-stack">
+        <div class="c-stack__left">
+            <img src="media/images/elite-students-hands-on.png" class="c-stack--image">
+        </div>
 
+        <div class="c-stack__right">
+            <h3>{{ .Params.stackTitleTwo }}</h3>
+
+            <p>
+                {{ .Params.stackDescriptionTwo }}
+            </p>
+        </div>
+    </div>
 </div>
 
 <div class="l-paper l-paper--dark l-paper--no-border-top">
     <div class="c-timeline">
+        
+        {{ range .Params.timeline }}
         <div class="c-timeline-event">
             <div class="c-timeline__title">
-                <h4>CyberStart Assess</h4>
+                <h4>{{ .eventTitle }}</h4>
             </div>
 
             <div class="c-timeline__date">
-                <p>3rd September – 25th October 2019</p>
+                <p>{{ .eventDate }}</p>
             </div>
 
             <div class="c-timeline__description">
                 <p>
-                    Put your problem-solving skills to the test with a range of fun, interactive challenges where you’ll try out cracking codes and solving tricky problems.
+                    {{ .eventDescription }}
                 </p>
             </div>
         </div>
+        {{ end }}
 
-        <div class="c-timeline-event">
-            <div class="c-timeline__title">
-                <h4>CyberStart Assess</h4>
-            </div>
-
-            <div class="c-timeline__date">
-                <p>3rd September – 25th October 2019</p>
-            </div>
-
-            <div class="c-timeline__description">
-                <p>
-                    Put your problem-solving skills to the test with a range of fun, interactive challenges where you’ll try out cracking codes and solving tricky problems.
-                </p>
-            </div>
-        </div>
-
-        <div class="c-timeline-event">
-            <div class="c-timeline__title">
-                <h4>CyberStart Assess</h4>
-            </div>
-
-            <div class="c-timeline__date">
-                <p>3rd September – 25th October 2019</p>
-            </div>
-
-            <div class="c-timeline__description">
-                <p>
-                    Put your problem-solving skills to the test with a range of fun, interactive challenges where you’ll try out cracking codes and solving tricky problems.
-                </p>
-            </div>
-        </div>
-
-        <div class="c-timeline-event">
-            <div class="c-timeline__title">
-                <h4>CyberStart Assess</h4>
-            </div>
-
-            <div class="c-timeline__date">
-                <p>3rd September – 25th October 2019</p>
-            </div>
-
-            <div class="c-timeline__description">
-                <p>
-                    Put your problem-solving skills to the test with a range of fun, interactive challenges where you’ll try out cracking codes and solving tricky problems.
-                </p>
-            </div>
-        </div>
+    
     </div>
 </div>
 
