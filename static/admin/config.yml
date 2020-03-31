@@ -31,6 +31,7 @@ collections:
           - {label: "Left Column", name: "leftColumn", widget: "list",
             fields: [
               {label: "Paragraph", name: "paragraph", widget: "markdown"}
+              }
             ]
           }
           
