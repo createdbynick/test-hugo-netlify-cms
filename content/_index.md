@@ -22,19 +22,4 @@ leftColumn:
       I absolutely loved taking part! I got pretty hooked on the rush of
       investigation and problem solving.
     author: Previous CyberStart student
-  # paragraphTwo: >-
-  #   Enrol to the Virtual Cyber School and you will be provided with a FREE
-  #   CyberStart Game license. With this, you'll be able to explore and have a go
-  #   at over 200 cyber security challenges. Plus, you will be invited to join
-  #   cyber security expert, James Lyne, for live webinars where he will use
-  #   CyberStart Game to teach security disciplines such as digital forensics,
-  #   cryptography and Linux. 
-
-
-  #   By playing CyberStart Game, students with no previous cyber security
-  #   interest or experience have gone on to master Linux fundamentals, write
-  #   their own programs, and learn what it means to be an ethical hacker working
-  #   in the industry. So what are you waiting for? Places are limited so make
-  #   sure you reserve your place today and we will be in touch when our
-  #   application stage opens!
 ---
