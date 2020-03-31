@@ -22,8 +22,18 @@ collections:
         label: "Home"
         name: "home"
         fields:
-          - {label: Header, name: header, widget: object, fields: [{label: Title, name: headerTitle, widget: text}, {label: Subtitle, name: headerSubtitle, widget: text}]}
-          - {label: Heading One, name: headingOne, widget: object, fields: [{label: Heading, name: headingOneTitle, widget: text}, {label: Heading Description, name: headingOneDescription, widget: text}]}
-          - {label: Timeline, name: timeline, widget: list, fields: [{label: Event Title, name: eventTitle, widget: string}, {label: Event Description, name: eventDescription, widget: string}]}
+          - {label: Header, name: header, widget: object,
+              fields: [
+                {label: Title, name: headerTitle, widget: text},
+                {label: Subtitle, name: headerSubtitle, widget: text}
+              ]
+            }
+          - {label: Left Column, name: leftColumn, widget: object,
+            fields: [
+              {label: Title, name: headerTitle, widget: text},
+              {label: Paragraph One, name: paragraphOne, widget: text}
+            ]
+          }
+          
 
           
