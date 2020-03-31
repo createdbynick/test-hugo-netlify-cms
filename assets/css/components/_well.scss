@@ -1,16 +1,16 @@
 .c-well {
+    display: block;
+    width: 100%;
+    padding: $well-padding;
     border-radius: $well-border-radius;
     border-style: solid;
     border-width: $well-border-size;
-    display: block;
-    padding: $well-padding;
-    width: 100%;
+    border-color: map-get($color-map, gray-light);
+    box-shadow: 0 0 0 4px rgba(map-get($color-map, gray-light), 0.3);
+    background-color: map-get($color-map, white);
 
-    @if ($well-theme == default) {
-        border-color: $well-color-default;
-    } @else if ($well-theme == fill) {
-        background-color: $well-color-default;
-        border: 0;
+    p:last-child {
+        margin-bottom: 0;
     }
 
     &--primary {

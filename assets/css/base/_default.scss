@@ -1,6 +1,12 @@
 body {
-    padding-bottom: $spacer-5;
     background-color: $body-bg-color;
+
+    &.cd {
+        background: url(../media/images/ui-background-cyber-discovery.png) center top;
+        background-repeat: repeat-x;
+        background-size: 1500px 600px;
+        background-color: $body-bg-color;
+    }
 }
 
 a {

@@ -247,14 +247,8 @@
 
 // Well
 @mixin well($color) {
-
-    @if ($well-theme == default) {
-        border-color: $color;
-    } @else if ($well-theme == fill) {
-        @include text-contrast($color);
-        background-color: $color;
-        border-color: transparent;
-    }
+    border-color: $color;
+    box-shadow: 0 0 0 4px rgba($color, 0.3);
 }
 
 // Alert

@@ -2,6 +2,10 @@
     display: flex;
     margin-top: $spacer-5;
 
+    @media only screen and (min-width: $breakpoint-large) {
+        padding: $spacer-15;
+    }
+
     // Left.
     &__left {
         flex-basis: 50%;

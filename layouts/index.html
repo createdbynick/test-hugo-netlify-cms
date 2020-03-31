@@ -6,7 +6,7 @@
 
 <div class="c-header">
     <div class="c-header__logo">
-        <img src="media/images/logo-cyber-discovery.svg" width="320">
+        <img src="media/images/ui-logo-cyber-discovery.svg" width="320">
     </div>
 
     <div class="c-header__title">
@@ -17,73 +17,150 @@
         <p>{{ .Params.header.headerSubtitle }}</p>
     </div>
 
-    <div class="c-header__subtitle">
-        <button class="c-btn c-btn--large c-btn--primary">Register your interest for next year</button>
+    <div class="c-header__action">
+        <button class="c-btn c-btn--large c-btn--primary">Reserve your place</button>
     </div>
 </div>
 
-<div class="l-paper l-paper--no-border-bottom">
+<div class="c-paper c-paper--background-wave-top">
+
+    <div class="l-grid">
+        <div class='l-col l-col-lg'>
+            <h2>Play CyberStart Game on demand at the Virtual Cyber School</h2>
+
+            <p>Whether you’re already a white-hat hacker in training or you’ve never touched a keyboard before, you can join our Virtual Cyber School.</p>
+
+            <p>Studying from home doesn’t have to be a chore! Join our Virtual Cyber School, in partnership with HM Government, where you will gain access to and learn how to play CyberStart Game. Learn how to crack codes, find security flaws and dissect criminals’ digital trails whilst playing as a cyber agent in our Cyber Protection Agency. You will learn the essential concepts and ideas cyber agents apply when dealing with the aftermath of real cyber attacks.</p>
+
+            <div class="c-quote h-my-10">
+                <p class="c-quote__text">I absolutely loved taking part! I got pretty hooked on the rush of investigation and problem solving.</p>
+
+                <p class="c-quote__author">Previous CyberStart student</p>
+            </div>
+
+            <p>Enrol to the Virtual Cyber School and you will be provided with a FREE CyberStart Game license. With this, you'll be able to explore and have a go at over 200 cyber security challenges. Plus, you will be invited to join cyber security expert, James Lyne, for live webinars where he will use CyberStart Game to teach security disciplines such as digital forensics, cryptography and Linux.</p>
+
+            <p>By playing CyberStart Game, students with no previous cyber security interest or experience have gone on to master Linux fundamentals, write their own programs, and learn what it means to be an ethical hacker working in the industry. So what are you waiting for?</p>
+
+            <p><strong>Places are limited so make sure you reserve your place today and we will be in touch when our application stage opens!</strong></p>
+        </div>
+        <div class='l-col l-col-lg'>
+            <div class="c-well h-mb-8">
+                <p class="h-f-sm">If you are a UK resident aged 13-18, or have a child or student in this age bracket and are interested in applying for a FREE CyberStart Game license, please enter your details below and we will email you when our application stage opens shortly. Places are limited so make sure you reserve your place today!</p>
+            </div>
+
+            <div class="c-well c-well--primary">
+                <form>
+                    <h2 class="h-f-xl h-mb-3">Reserve your place</h2>
+
+                    <small class="h-mb-3 h-d-block h-f-xs">Already playing CyberStart Game with Cyber Discovery? No need to apply. We'll be extending your access over summer!</small>
+
+                    <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="A61C50BEC994754B1D79C5819EC1255CE2CDD55AE3A570FE0C99808BAAFF559F985B8924345E5ACEAC07C4AD04C24FCFB2036ED8FB86858827F4B59E2D5A6E82">
+                        <div class="c-form-item">
+                            <label class="c-form-label">Name</label>
+                            <input aria-label="Name" class="c-form-input" id="fieldName" required="" maxlength="200" name="cm-name">
+                        </div>
+
+                        <div class="c-form-item">
+                            <label class="c-form-label">Email</label>
+                            <input autocomplete="Email" aria-label="Email" class="c-form-input js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-jyhrkli-jyhrkli" required="" type="email">
+                        </div>
+
+                        <div class="c-form-item">
+                            <button type="submit" class="c-btn c-btn--large c-btn--block c-btn--primary">Reserve your place</button>
+                        </div>
+                    </form>
+                </form>
+            </div>
+            <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+
+            <div class="c-video-container h-mt-8">
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/385938113?color=20cace&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+
+            <div class="c-quote h-mt-8">
+                <p class="c-quote__text">CyberStart Game is a challenging, rewarding, and detailed intro to hacking, programming, and forensics.</p>
+
+                <p class="c-quote__author">Jason Smith, previous CyberStart Student</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="c-paper c-paper--background-wave-top">
     <div class="c-heading">
-        <div class="c-heading__title">
-            <h2>{{ .Params.headingOne.headingOneTitle }}</h2>
+        <h2>Over 200 challenges across four exciting bases for you to explore and learn through</h2>
+    </div>
+
+    <div class="l-grid">
+        <div class='l-col l-col-lg'>
+            <div class="c-well h-mb-8">
+                <h3 class="h-f-sm">HQ Base</h3>
+
+                <p class="h-f-sm">Tackle cyber-criminal gangs by gathering information about them, cracking codes, and dissecting their digital trail.</p>
+            </div>
+
+            <div class="c-well h-mb-8">
+                <h3 class="h-f-sm">Moon Base</h3>
+
+                <p class="h-f-sm">Here you'll learn Python, executing and running code through your own code editor and writing your own programs.</p>
+            </div>
         </div>
-        <div class="c-heading__body">
-            <p>{{ .Params.headingOne.headingOneDescription }}</p>
+
+        <div class='l-col l-col-lg'>
+            <div class="c-well h-mb-8">
+                <h3 class="h-f-sm">Forensics Base</h3>
+
+                <p class="h-f-sm">Learn the essential concepts and ideas cyber agents apply when dealing with the aftermath of a cyber security attack.</p>
+            </div>
+
+            <div class="c-well h-mb-8">
+                <h3 class="h-f-sm">Moon Base</h3>
+
+                <p class="h-f-sm">Volcano base is only open to those who 100% HQ. This base comes with a warning: only the most determined and skilled will ever complete it!</p>
+            </div>
         </div>
     </div>
 
-    
-    <div class="c-stack">
-        <div class="c-stack__left">
-            <h3>{{ .Params.stackTitleOne }}</h3>
-
-            <p>
-                {{ .Params.stackDescriptionOne }}
-            </p>
-        </div>
-
-        <div class="c-stack__right">
-            <img src="media/images/elite-students-hands-on.png" class="c-stack--image">
-        </div>
-    </div>
-
-    <div class="c-stack">
-        <div class="c-stack__left">
-            <img src="media/images/elite-students-hands-on.png" class="c-stack--image">
-        </div>
-
-        <div class="c-stack__right">
-            <h3>{{ .Params.stackTitleTwo }}</h3>
-
-            <p>
-                {{ .Params.stackDescriptionTwo }}
-            </p>
+    <div class="l-grid l-grid-center">
+        <div class="l-col l-col-9 l-col-lg">
+            <div class="c-quote h-mt-10">
+                <p class="c-quote__text">The challenges are interesting and satisfying. If I didn't know how to do something, I was encouraged to look through the manual and do extra research to learn how to do it; this gave me a sense of ownership over the solution, which was incredibly rewarding.</p>
+        
+                <p class="c-quote__author">Tessa Escude, previous CyberStart student</p>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="l-paper l-paper--dark l-paper--no-border-top">
-    <div class="c-timeline">
-        
-        {{ range .Params.timeline }}
-        <div class="c-timeline-event">
-            <div class="c-timeline__title">
-                <h4>{{ .eventTitle }}</h4>
+<div class="c-paper c-paper--dark">
+    <div class="c-heading">
+        <h2>Homeschooling just got easier</h2>
+    </div>
+
+    <div class="l-grid">
+        <div class='l-col col-md'>
+            <p>CyberStart Game is the most proven cyber security training tool for young adults. Full of challenges that will test the persistence and research needed when facing authentic cyber security tasks, CyberStart builds up students’ technical skills and creative-thinking. Whether approached by beginners with a casual interest or hobbyists who are steps away from becoming a cyber security professional, it offers challenges that engages and sharpens anyone’s talents.</p>
+        </div>
+
+        <div class='l-col l-col-lg'>
+           <p>The rich narrative, highly designed challenges and user-centric progress system is designed to enable a student to work through the challenges at their own pace, without the need of a teacher or anyone who has a background in cyber security.</p>
+
+           <p>During this testing period of school closures, we want to ensure young adults and their learning are supported more than ever. That is why our Virtual Cyber School is offering thousands of free licenses to keep students occupied!</p>
+        </div>
+
+        <div class="l-grid l-grid-center h-mt-8">
+            <div class="l-col l-col-8">
+                <p class="h-text-center">If you are 13-18, or have a child or student in this age bracket and are interested in applying for a FREE CyberStart Game license, please enter your details below and we will email you when our application stage opens shortly!</p>
             </div>
 
-            <div class="c-timeline__date">
-                <p>{{ .eventDate }}</p>
-            </div>
-
-            <div class="c-timeline__description">
-                <p>
-                    {{ .eventDescription }}
-                </p>
+            <div class="l-col l-col-8 h-text-center h-mt-8">
+                <button class="c-btn c-btn--large c-btn--primary">Reserve your place</button>
             </div>
         </div>
-        {{ end }}
 
-    
     </div>
 </div>
 

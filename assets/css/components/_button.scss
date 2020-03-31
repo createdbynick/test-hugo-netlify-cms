@@ -8,12 +8,14 @@
     box-sizing: border-box;
     display: inline-flex;
     font-family: $font-family-button;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-bold;
+    font-size: $button-font-size;
     justify-content: center;
     min-height: $button-height;
     padding: 0 $button-padding;
     text-align: center;
     text-decoration: none;
+    letter-spacing: 0.03em;
 
     &:not(:last-of-type) {
         margin-right: $spacer-3;

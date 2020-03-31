@@ -1,8 +1,17 @@
+// ********************
+// Helpers
+// ********************
+
 // Linking
+// -------------------------------------------------
+
+// Fake link.
 .h-fake-link {
     cursor: pointer;
 }
 
+// Padding
+// -------------------------------------------------
 
 // Padding.
 @each $name,
@@ -60,6 +69,9 @@ $value in $spacer-map {
     }
 }
 
+// Margins
+// -------------------------------------------------
+
 // Margin.
 @each $name,
 $value in $spacer-map {
@@ -116,6 +128,9 @@ $value in $spacer-map {
     }
 }
 
+// Text
+// -------------------------------------------------
+
 // Text colors.
 @each $name,
 $value in $color-map {
@@ -124,6 +139,7 @@ $value in $color-map {
     }
 }
 
+// Text colors, grey.
 @each $name,
 $value in $color-map-gray {
     .h-text-#{$name} {
@@ -131,7 +147,9 @@ $value in $color-map-gray {
     }
 }
 
-// Background colors.
+// Background
+// -------------------------------------------------
+
 @each $color,
 $bgcolor in $color-map {
     .h-bg-#{$color} {
@@ -139,24 +157,65 @@ $bgcolor in $color-map {
     }
 }
 
-// Alignment.
+// Text Alignment
+// -------------------------------------------------
+
+// Text center.
 .h-text-center {
     text-align: center !important;
 }
 
+// Text left.
 .h-text-left {
     text-align: left !important;
 }
 
+// Text right.
 .h-text-right {
     text-align: right !important;
 }
 
-// Image shapes.
+// Image Shapes
+// -------------------------------------------------
+
+// Circle.
 .h-circle {
     border-radius: 50%;
 }
 
+// Rounded.
 .h-rounded {
     border-radius: 6px;
+}
+
+// Display
+// -------------------------------------------------
+
+// Block.
+.h-d-block {
+    display: block;
+}
+
+// Inline.
+.h-d-inline-block {
+    display: inline-block;
+}
+
+// Font Size
+// -------------------------------------------------
+
+.h-f-xs {
+    font-size: $font-size-xsmall;
+}
+
+.h-f-sm {
+    font-size: $font-size-small;
+}
+
+.h-f-lg {
+    font-size: $font-size-large;
+}
+
+.h-f-xl {
+    font-size: $font-size-xlarge;
 }

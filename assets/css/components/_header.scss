@@ -3,11 +3,13 @@
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-    padding: $spacer-5 0;
+    padding: $spacer-15;
     text-align: center;
 
+    // Responsive.
     @media only screen and (min-width: $breakpoint-medium) {
-        max-width: 650px;
+        max-width: 580px;
+        padding: $spacer-15 $spacer-10;
     }
 
     // Logo.
@@ -20,11 +22,17 @@
     &__title {
         display: flex;
         justify-content: center;
-        padding: $spacer-4 0 0;
+        padding: $spacer-6 0 0;
 
         h1 {
             margin: 0;
-            color: map-get($color-map, purple-lightest);
+            color: map-get($color-map, aqua);
+            font-size: $h2;
+
+            // Responsive.
+            @media only screen and (min-width: $breakpoint-medium) {
+                font-size: $h1;
+            }
         }
     }
 
@@ -32,15 +40,30 @@
     &__subtitle {
         display: flex;
         justify-content: center;
-        padding: $spacer-4 0 0;
+        padding: $spacer-3 0 0;
         color: map-get($color-map, white);
 
-        p:last-child { margin: 0; }
+        // Paragraph.
+        p {
+            font-size: $font-size-base;
+
+            // Responsive.
+            @media only screen and (min-width: $breakpoint-medium) {
+                font-size: $font-size-xlarge;
+            }
+
+            &:last-child { 
+                margin: 0;
+            }
+
+        }
+
     }
 
     // Action.
     &__action {
         display: flex;
         justify-content: center;
+        padding: $spacer-6 0 0;
     }
 }

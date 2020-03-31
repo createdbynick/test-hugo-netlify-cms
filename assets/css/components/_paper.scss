@@ -1,0 +1,51 @@
+// ********************
+// Paper
+// ********************
+
+.c-paper {
+    position: relative;
+    max-width: $container-width-max;
+    margin-bottom: $spacer-7;
+    padding: $spacer-6;
+    border-radius: $border-radius;
+    background-color: map-get($color-map, white);
+
+    @media only screen and (min-width: $breakpoint-large) {
+        padding: $spacer-15;
+    }
+
+    // No border radius, top
+    &--no-border-radius-top {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    // No border radius, bottom
+    &--no-border-radius-bottom {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    // No border radius, bottom
+    &--background-wave-top {
+        background: url(../media/images/ui-background-wave-top.png) center top;
+        background-repeat: repeat-x;
+        background-size: 100%;
+        background-color: map-get($color-map, white);
+    }
+
+    // Paper, dark.
+    &--dark {
+        background-color: map-get($color-map, gray-uberdark);
+        color: map-get($color-map, gray-light);
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: map-get($color-map, white);
+        }
+    }
+}

@@ -1,9 +1,15 @@
 .c-heading {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 70%;
+    margin: 0 auto $spacer-5;
+    max-width: 100%;
     text-align: center;
+
+    // Responsive.
+    @media only screen and (min-width: $breakpoint-medium) {
+        max-width: 70%;
+        margin: 0 auto $spacer-10;
+    }
 
     &__title {
 

@@ -44,16 +44,20 @@ $font-family-heading: $font-family-secondary;
 $font-family-button: $font-family-secondary;
 
 $font-size-base: 20px;
-$font-size-small: 12px;
-$font-size-large: 26px;
-$font-size-scale: 1.4;
+
+$font-size-xsmall: 16px;
+$font-size-small: 18px;
+$font-size-large: 22px;
+$font-size-xlarge: 26px;
+
+$font-size-scale: 1.5;
 
 $font-size-map: (
-  h1: 56px,
+  h1: 48px,
   h2: 32px,
   h3: 26px,
   h4: 22px,
-  h5: 18px,
+  h5: 20px,
   h6: 16px
 );
 
@@ -88,6 +92,10 @@ $color-map: (
     blue-dark: #205981,
     blue-superdark: #0d2332,
     blue-uberdark: #091823,
+    aqua: #2b9abe,
+    aqua-light:#3eaed3,
+    aqua-dark: #24809e,
+    aqua-superdark: #154c5e,
     red: #c04b4e,
     red-light: #ca686b,
     red-dark: #a93b3e,
@@ -127,8 +135,8 @@ $color-map-gray: (
     50: lighten($color-gray-base, 50%),
     60: lighten($color-gray-base, 60%),
     70: lighten($color-gray-base, 70%),
-    80: lighten($color-gray-base, 80%),
-    90: lighten($color-gray-base, 88%),
+    80: lighten($color-gray-base, 86%),
+    90: lighten($color-gray-base, 90%),
 );
 
 // Functional colors
@@ -137,9 +145,9 @@ $color-map-gray: (
 // ** Functional colors are used primarly for buttons and states.
 // ** These should be mapped to your brand colors.
 
-$color-primary: map-get($color-map, purple);
-$color-primary-light: map-get($color-map, purple-light);
-$color-primary-dark: map-get($color-map, purple-dark);
+$color-primary: map-get($color-map, aqua);
+$color-primary-light: map-get($color-map, aqua-light);
+$color-primary-dark: map-get($color-map, aqua-dark);
 
 $color-secondary: map-get($color-map, blue);
 $color-secondary-light: map-get($color-map, blue-light);
@@ -164,7 +172,7 @@ $color-danger-dark: map-get($color-map, red-dark);
 // Main
 // -------------------------------------------------
 
-$body-text-color: map-get($color-map, gray-dark);
+$body-text-color: map-get($color-map, gray-darkest);
 $body-bg-color: map-get($color-map, blue-superdark);
 $link-color: $color-primary;
 $link-text-decoration: false;
@@ -179,9 +187,19 @@ $spacer-map: (
     0: 0,
     1: 4px,
     2: 8px,
-    3: 16px,
-    4: 32px,
-    5: 64px,
+    3: 12px,
+    4: 16px,
+    5: 20px,
+    6: 24px,
+    7: 28px,
+    8: 32px,
+    9: 36px,
+    10: 44px,
+    11: 48px,
+    12: 52px,
+    13: 56px,
+    14: 60px,
+    15: 62px
 );
 
 $spacer-0: map-get($spacer-map, 0);
@@ -190,6 +208,16 @@ $spacer-2: map-get($spacer-map, 2);
 $spacer-3: map-get($spacer-map, 3);
 $spacer-4: map-get($spacer-map, 4);
 $spacer-5: map-get($spacer-map, 5);
+$spacer-6: map-get($spacer-map, 6);
+$spacer-7: map-get($spacer-map, 7);
+$spacer-8: map-get($spacer-map, 8);
+$spacer-9: map-get($spacer-map, 9);
+$spacer-10: map-get($spacer-map, 10);
+$spacer-11: map-get($spacer-map, 11);
+$spacer-12: map-get($spacer-map, 12);
+$spacer-13: map-get($spacer-map, 13);
+$spacer-14: map-get($spacer-map, 14);
+$spacer-15: map-get($spacer-map, 15);
 
 // Radii
 
@@ -207,13 +235,13 @@ $button-height-large: 62px;
 
 $button-padding: 16px;
 $button-padding-small: 10px;
-$button-padding-large: 22px;
+$button-padding-large: 32px;
 
 $button-radius: 6px;
 
-$button-font-size: 16px;
+$button-font-size: 18px;
 $button-font-size-small: 14px;
-$button-font-size-large: 18px;
+$button-font-size-large: 22px;
 
 $button-color-success: $color-success;
 $button-color-warning: $color-warning;
@@ -231,9 +259,9 @@ $button-transition-duration: 0.2s;
 // Forms
 $form-theme: default !default; // default | alt | shadow
 
-$input-height: 42px;
-$input-height-small: 28px;
-$input-height-large: 54px;
+$input-height: 50px;
+$input-height-small: 30px;
+$input-height-large: 60px;
 
 $input-padding: 12px;
 $input-padding-small: 8px;
@@ -241,7 +269,7 @@ $input-padding-large: 22px;
 
 $input-radius: 6px;
 
-$input-font-size: 16px;
+$input-font-size: $font-size-base;
 $input-font-size-small: 14px;
 $input-font-size-large: 22px;
 
@@ -276,14 +304,12 @@ $alert-radius: 6px;
 $alert-border-width: 2px;
 
 // Wells
-$well-theme: default; // default | fill 
+$well-padding: $spacer-6;
 
-$well-padding: $spacer-4;
+$well-border-radius: 10px;
+$well-border-size: 1px;
 
-$well-border-radius: 6px;
-$well-border-size: 2px;
-
-$well-color-default: map-get($color-map-gray, 80);
-$well-color-primary: $color-primary;
+$well-color-default: map-get($color-map, grey);
+$well-color-primary: map-get($color-map, aqua-light);
 $well-color-secondary: $color-secondary;
 $well-color-tertiary: $color-tertiary;

@@ -10,9 +10,10 @@
 // Input label
 .c-form-label {
     display: inline-block;
-    font-size: $input-font-size-small;
+    font-size: $input-font-size;
     font-weight: $font-weight-medium;
     margin-bottom: $spacer-2;
+    color: map-get($color-map, grey-dark);
 }
 
 // Inputs

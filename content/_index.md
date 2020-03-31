@@ -1,7 +1,7 @@
 ---
 header:
-  headerTitle: Discover your hidden talent for cyber security
-  headerSubtitle: "Want to protect yourself and your country from cyber attacks? Cyber Discovery is HM Government’s free, online, extracurricular programme turning teenagers across the country into cyber security experts. For students aged 13-18, we’re seeking problem solvers, code crackers and, most importantly, those who never give up."
+  headerTitle: "Virtual Summer School"
+  headerSubtitle: "Learn how to crack codes, find security flaws and dissect criminals digital trails for free with CyberStart Game"
 headingOne:
   headingOneTitle: "Are you a student in the UK aged 13-18?"
   headingOneDescription: "Join Cyber Discovery, HM Government’s free online extracurricular programme, and take your first steps to become a cyber security expert"
