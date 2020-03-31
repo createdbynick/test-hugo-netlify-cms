@@ -28,7 +28,7 @@ collections:
                 {label: "Subtitle", name: "headerSubtitle", widget: "markdown"}
               ]
             }
-          - {label: "Left Column", name: "leftColumn", widget: "object",
+          - {label: "Left Column", name: "leftColumn", widget: "list",
             fields: [
               {label: "Title", name: "title", widget: "markdown"},
               {label: "Paragraph One", name: "paragraphOne", widget: "markdown"},
