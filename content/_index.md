@@ -11,6 +11,8 @@ leftColumn:
     touched a keyboard before, you can join our Virtual Cyber School. 
 
 
+
+
     Studying from home doesn’t have to be a chore! Join our Virtual Cyber
     School, in partnership with HM Government, where you will gain access to and
     learn how to play CyberStart Game. Learn how to crack codes, find security
