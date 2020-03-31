@@ -28,8 +28,8 @@
         <div class='l-col l-col-lg'>
             <h2>{{ .Params.leftColumn.title }}</h2>
             
-            {{ range .Params.leftColumn.paragraphs }}
-                {{ .paragraph }}
+            {{ range .Params.leftColumn.paragraph }}
+                {{ .text }}
             {{ end }}
 
             <div class="c-quote h-my-10">

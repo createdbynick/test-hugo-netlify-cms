@@ -6,7 +6,7 @@ header:
     trails for free with CyberStart Game
 leftColumn:
   title: Play CyberStart Game on demand at the Virtual Cyber School
-  paragraphs:
+  text:
     - paragraph: "Hello"
   quote:
     text: >-

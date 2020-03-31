@@ -30,9 +30,12 @@ collections:
               - {label: Header Subtitle, name: headerSubtitle, widget: text}
           - label: "Column Left"
             name: "leftColumn"
-            widget: "list"
+            widget: "object"
             fields:
-              - {label: Paragraph, name: paragraph, widget: text}
+              - {label: Title, name: title, widget: string}
+              - {label: Paragraph, name: paragraph, widget: list, fields:
+                [{label: Text, name: text, widget: text}]}
+              
           
 
           
