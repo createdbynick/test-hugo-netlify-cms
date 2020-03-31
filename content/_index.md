@@ -34,6 +34,9 @@ leftColumn:
     cryptography and Linux. 
 
 
+
+
+
     By playing CyberStart Game, students with no previous cyber security
     interest or experience have gone on to master Linux fundamentals, write
     their own programs, and learn what it means to be an ethical hacker working
