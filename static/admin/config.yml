@@ -22,16 +22,16 @@ collections:
         label: "Home"
         name: "home"
         fields:
-          - {label: Header, name: header, widget: object,
+          - {label: Header, name: header, widget: markdown,
               fields: [
-                {label: Title, name: headerTitle, widget: text},
-                {label: Subtitle, name: headerSubtitle, widget: text}
+                {label: Title, name: headerTitle, widget: markdown},
+                {label: Subtitle, name: headerSubtitle, widget: markdown}
               ]
             }
-          - {label: Left Column, name: leftColumn, widget: object,
+          - {label: Left Column, name: leftColumn, widget: markdown,
             fields: [
-              {label: Title, name: Title, widget: text},
-              {label: Paragraph One, name: paragraphOne, widget: text}
+              {label: Title, name: Title, widget: markdown},
+              {label: Paragraph One, name: paragraphOne, widget: markdown}
             ]
           }
           
