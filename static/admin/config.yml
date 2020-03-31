@@ -30,7 +30,7 @@ collections:
             }
           - {label: Left Column, name: leftColumn, widget: object,
             fields: [
-              {label: Title, name: headerTitle, widget: text},
+              {label: Title, name: Title, widget: text},
               {label: Paragraph One, name: paragraphOne, widget: text}
             ]
           }
