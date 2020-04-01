@@ -34,17 +34,17 @@ collections:
                   label: Quote,
                   name: quote,
                   widget: object,
-                  fields: [{ label: Text, name: text, widget: text }],
+                  fields:
+                    [
+                      { label: Text, name: text, widget: text },
+                      { label: author, name: author, widget: text }
+                    ],
                 }
               - {
                   label: Copy Set Two,
                   name: copySetTwo,
                   widget: list,
-                  fields:
-                    [
-                      { label: Text, name: text, widget: text },
-                      { label: author, name: author, widget: text },
-                    ],
+                  fields: [{ label: Text, name: text, widget: text }],
                 }
           - label: "Column Right"
             name: "columnRight"
