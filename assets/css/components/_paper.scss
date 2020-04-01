@@ -34,6 +34,14 @@
         background-color: map-get($color-map, white);
     }
 
+    &--background-base-hq {
+        padding-bottom: 380px;
+        background: url(../media/images/ui-background-base-hq.png) bottom left;
+        background-repeat: no-repeat;
+        background-size: 1800px;
+        background-color: map-get($color-map, white);
+    }
+
     // Paper, dark.
     &--dark {
         background-color: map-get($color-map, gray-uberdark);
