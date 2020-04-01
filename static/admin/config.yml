@@ -57,4 +57,4 @@ collections:
                   widget: list,
                   fields: [{ label: Text, name: text, widget: text }],
                 }
-              - { label: Quote, name: quote, widget: string }
+              
