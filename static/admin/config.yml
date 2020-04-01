@@ -45,5 +45,5 @@ collections:
                   label: Form,
                   name: form,
                   widget: object,
-                  fields: [{ label: Title, name: title, widget: string }],
+                  fields: [{ label: Title, name: title, widget: string }, { label: Subtitle, name: subtitle, widget: text }],
                 }
