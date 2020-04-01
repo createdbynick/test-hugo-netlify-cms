@@ -1,19 +1,11 @@
 ---
 header:
-  title: Virtual Summer School
+  title: Virtual Cyber School
   subtitle: >-
-    Learn how to crack codes, find security flaws and dissect criminals digital
-    trails for free with CyberStart Game
+    Learn how to crack codes, find security flaws and stop cyber criminals for free with CyberStart Game
 columnLeft:
   title: Play CyberStart Game on demand at the Virtual Cyber School
-  text:
-    - paragraph: Hello
-  quote:
-    text: >-
-      I absolutely loved taking part! I got pretty hooked on the rush of
-      investigation and problem solving.
-    author: Previous CyberStart student
-  paragraph:
+  copySetOne:
     - text: >-
         Whether you’re already a white-hat hacker in training or you’ve never
         touched a keyboard before, you can join our Virtual Cyber School.
@@ -25,4 +17,26 @@ columnLeft:
         cyber agent in our Cyber Protection Agency. You will learn the essential
         concepts and ideas cyber agents apply when dealing with the aftermath of
         real cyber attacks.
+  quote:
+    text: >-
+      I absolutely loved taking part! I got pretty hooked on the rush of
+      investigation and problem solving.
+    author: Previous CyberStart student
+  copySetTwo:
+    - text: >-
+        Whether you’re already a white-hat hacker in training or you’ve never
+        touched a keyboard before, you can join our Virtual Cyber School.
+    - text: >-
+        Studying from home doesn’t have to be a chore! Join our Virtual Cyber
+        School, in partnership with HM Government, where you will gain access to
+        and learn how to play CyberStart Game. Learn how to crack codes, find
+        security flaws and dissect criminals’ digital trails whilst playing as a
+        cyber agent in our Cyber Protection Agency. You will learn the essential
+        concepts and ideas cyber agents apply when dealing with the aftermath of
+        real cyber attacks.
+columnRight:
+  criteria: If you are a UK resident aged 13-18, or have a child or student in this age bracket and are interested in applying for a FREE CyberStart Game license, please enter your details below and we will email you when our application stage opens shortly. Places are limited so make sure you reserve your place today!
+  form:
+    title: Reserve your place
+    subtitle: Already playing CyberStart Game with Cyber Discovery? No need to apply. We'll be extending your access over summer!
 ---
