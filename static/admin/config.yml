@@ -6,15 +6,15 @@ media_folder: static/img
 public_folder: /img
 show_preview_links: true
 collections:
-  - name: "post" 
-    label: "Post" 
+  - name: "post"
+    label: "Post"
     folder: "site/content/post"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Intro Blurb", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
     files:
@@ -26,27 +26,35 @@ collections:
             name: "header"
             widget: "object"
             fields:
-              - {label: Header Title, name: title, widget: text}
-              - {label: Header Subtitle, name: subTitle, widget: text}
+              - { label: Header Title, name: title, widget: text }
+              - { label: Header Subtitle, name: subTitle, widget: text }
           - label: "Column Left"
             name: "columnLeft"
             widget: "object"
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Copy Set One, name: copySetOne, widget: list, fields:
-                [{label: Text, name: text, widget: text}]}
-              - {label: Quote, name: quote, widget: string}
-              - {label: Copy Set Two, name: copySetTwo, widget: list, fields:
-                [{label: Text, name: text, widget: text}]}
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Copy Set One,
+                  name: copySetOne,
+                  widget: list,
+                  fields: [{ label: Text, name: text, widget: text }],
+                }
+              - { label: Quote, name: quote, widget: string }
+              - {
+                  label: Copy Set Two,
+                  name: copySetTwo,
+                  widget: list,
+                  fields: [{ label: Text, name: text, widget: text }],
+                }
           - label: "Column Right"
             name: "columnRight"
             widget: "object"
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Copy Set One, name: copySetTwo, widget: list, fields:
-                [{label: Text, name: text, widget: text}]}
-              - {label: Quote, name: quote, widget: string}
-              
-          
-
-          
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Copy Set One,
+                  name: copySetTwo,
+                  widget: list,
+                  fields: [{ label: Text, name: text, widget: text }],
+                }
+              - { label: Quote, name: quote, widget: string }
