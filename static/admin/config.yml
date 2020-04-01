@@ -28,7 +28,7 @@ collections:
                   label: Copy Set One,
                   name: copySetOne,
                   widget: list,
-                  fields: [{ label: Text, name: text, widget: text }],
+                  fields: [{ label: Text, name: text, widget: markdown }],
                 }
               - {
                   label: Quote,
@@ -50,7 +50,7 @@ collections:
             name: "columnRight"
             widget: "object"
             fields:
-              - { label: Criteria, name: criteria, widget: text }
+              - { label: Criteria, name: criteria, widget: markdown }
               - {
                   label: Form,
                   name: form,
@@ -58,7 +58,7 @@ collections:
                   fields:
                     [
                       { label: Title, name: title, widget: string },
-                      { label: Subtitle, name: subtitle, widget: text },
+                      { label: Subtitle, name: subtitle, widget: markdown },
                     ],
                 }
               - {
