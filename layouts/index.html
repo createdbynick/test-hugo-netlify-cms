@@ -43,7 +43,7 @@
             {{ end }}
         </div>
         <div class='l-col l-col-lg'>
-            <div class="c-well h-mb-8">
+            <div class="c-well h-mb-9">
                 <p class="h-f-sm">{{ .Params.columnRight.criteria }}</p>
             </div>
 
@@ -51,7 +51,7 @@
                 <form>
                     <h2 class="h-f-xl h-mb-3">{{ .Params.columnRight.form.title }}</h2>
 
-                    <small class="h-mb-3 h-d-block h-f-xs">{{ .Params.columnRight.form.subtitle }}</small>
+                    <small class="h-mb-3 h-d-block h-f-xs h-text-gray">{{ .Params.columnRight.form.subtitle }}</small>
 
                     <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="A61C50BEC994754B1D79C5819EC1255CE2CDD55AE3A570FE0C99808BAAFF559F985B8924345E5ACEAC07C4AD04C24FCFB2036ED8FB86858827F4B59E2D5A6E82">
                         <div class="c-form-item">
@@ -72,7 +72,7 @@
             </div>
             <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 
-            <div class="c-video-container h-mt-8">
+            <div class="c-video-container h-mt-9">
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/385938113?color=20cace&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                 <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
@@ -88,51 +88,109 @@
 </div>
 
 <div class="c-paper">
-    <div class="c-heading">
+    <div class="c-heading h-mb-15">
         <h2>{{ .Params.product.title }}</h2>
     </div>
 
     <div class="l-grid">
         <div class='l-col l-col-lg'>
             
-            <div class="o-base-summary h-mb-8">
-                <div class="o-base-summary__title">{{ .Params.product.baseOne.title }}</div>
-                <div class="o-base-summary__description">
+            <div class="m-base-summary h-mb-15">
+                <div class="m-base-summary__icon">
+                    <img src="media/images/ui-icon-base-hq.png">
+                </div>
+
+                <div class="m-base-summary__title">{{ .Params.product.baseOne.title }}</div>
+
+                <div class="m-base-summary__description">
                     <p>{{ .Params.product.baseOne.text }}</p>
                 </div>
 
-
-                <div class="o-base-summary__stats">
-                    <div class="o-base-summary__stat">
+                <div class="m-base-summary__stats">
+                    <div class="m-base-summary__stat m-base-summary__stat--easy">
                         Easy: 30%
                     </div>
-                    <div class="o-base-summary__stat">
+                    <div class="m-base-summary__stat m-base-summary__stat--medium">
                         Medium: 30%
                     </div>
-                    <div class="o-base-summary__stat">
+                    <div class="m-base-summary__stat m-base-summary__stat--hard">
                         Hard: 30%
                     </div>
                 </div>
             </div>
 
-            <div class="c-well h-mb-8">
-                <h3 class="h-f-sm">{{ .Params.product.baseTwo.title }}</h3>
+            <div class="m-base-summary">
+                <div class="m-base-summary__icon">
+                    <img src="media/images/ui-icon-base-moon.png">
+                </div>
+                
+                <div class="m-base-summary__title">{{ .Params.product.baseOne.title }}</div>
 
-                <p class="h-f-sm">{{ .Params.product.baseTwo.text }}</p>
+                <div class="m-base-summary__description">
+                    <p>{{ .Params.product.baseOne.text }}</p>
+                </div>
+
+                <div class="m-base-summary__stats">
+                    <div class="m-base-summary__stat m-base-summary__stat--easy">
+                        Easy: 30%
+                    </div>
+                    <div class="m-base-summary__stat m-base-summary__stat--medium">
+                        Medium: 30%
+                    </div>
+                    <div class="m-base-summary__stat m-base-summary__stat--hard">
+                        Hard: 30%
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class='l-col l-col-lg'>
-            <div class="c-well h-mb-8">
-                <h3 class="h-f-sm">{{ .Params.product.baseThree.title }}</h3>
+            <div class="m-base-summary h-mb-15">
+                <div class="m-base-summary__icon">
+                    <img src="media/images/ui-icon-base-forensics.png">
+                </div>
 
-                <p class="h-f-sm">{{ .Params.product.baseThree.text }}</p>
+                <div class="m-base-summary__title">{{ .Params.product.baseOne.title }}</div>
+
+                <div class="m-base-summary__description">
+                    <p>{{ .Params.product.baseOne.text }}</p>
+                </div>
+
+                <div class="m-base-summary__stats">
+                    <div class="m-base-summary__stat m-base-summary__stat--easy">
+                        Easy: 30%
+                    </div>
+                    <div class="m-base-summary__stat m-base-summary__stat--medium">
+                        Medium: 30%
+                    </div>
+                    <div class="m-base-summary__stat m-base-summary__stat--hard">
+                        Hard: 30%
+                    </div>
+                </div>
             </div>
 
-            <div class="c-well h-mb-8">
-                <h3 class="h-f-sm">{{ .Params.product.baseFour.title }}</h3>
+            <div class="m-base-summary h-mb-8">
+                <div class="m-base-summary__icon">
+                    <img src="media/images/ui-icon-base-volcano.png">
+                </div>
 
-                <p class="h-f-sm">{{ .Params.product.baseFour.text }}</p>
+                <div class="m-base-summary__title">{{ .Params.product.baseOne.title }}</div>
+
+                <div class="m-base-summary__description">
+                    <p>{{ .Params.product.baseOne.text }}</p>
+                </div>
+
+                <div class="m-base-summary__stats">
+                    <div class="m-base-summary__stat m-base-summary__stat--easy">
+                        Easy: 30%
+                    </div>
+                    <div class="m-base-summary__stat m-base-summary__stat--medium">
+                        Medium: 30%
+                    </div>
+                    <div class="m-base-summary__stat m-base-summary__stat--hard">
+                        Hard: 30%
+                    </div>
+                </div>
             </div>
         </div>
     </div>

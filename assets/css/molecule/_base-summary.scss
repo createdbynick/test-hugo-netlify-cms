@@ -1,12 +1,26 @@
 .m-base-summary {
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding: $spacer-5;
+    padding: $spacer-8 $spacer-5 $spacer-5 $spacer-5;
     border-radius: $border-radius;
-    background-color: map-get($color-map, gray-light);
+    background-color: map-get($color-map, white);
+    border: 1px solid map-get($color-map-gray, 80);
+    transition: .2s ease-in-out;
+    box-shadow: 0 2px 5px map-get($color-map-gray, 90);
+
+    &__icon {
+        position: absolute;
+        top: -45px;
+        left: calc(50% - 36px);
+        width: 72px;
+    }
 
     &__title {
-        font-size: $h3;
+        margin-bottom: $spacer-3;
+        font-size: $font-size-small;
+        font-weight: $font-weight-bold;
+        color: map-get($color-map, black);
     }
 
     &__description {
@@ -22,6 +36,59 @@
 
     &__stat {
         flex-grow: 1;
+        margin-right: $spacer-3;
+        padding: $spacer-1 $spacer-4;
+        font-size: $font-size-xsmall;;
+        border-radius: $border-radius-large;
+
+        &--easy {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: calc(50% - 5px);
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: map-get($color-map, green);;
+            }
+        }
+
+        &--medium {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: calc(50% - 5px);
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: map-get($color-map, yellow);;
+            }
+        }
+
+        &--hard {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: calc(50% - 5px);
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: map-get($color-map, red);;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
 }
