@@ -30,12 +30,21 @@ collections:
                   widget: list,
                   fields: [{ label: Text, name: text, widget: text }],
                 }
-              - { label: Quote, name: quote, widget: text }
+              - {
+                  label: Quote,
+                  name: quote,
+                  widget: object,
+                  fields: [{ label: Text, name: text, widget: text }],
+                }
               - {
                   label: Copy Set Two,
                   name: copySetTwo,
                   widget: list,
-                  fields: [{ label: Text, name: text, widget: text }],
+                  fields:
+                    [
+                      { label: Text, name: text, widget: text },
+                      { label: author, name: author, widget: text },
+                    ],
                 }
           - label: "Column Right"
             name: "columnRight"
@@ -46,5 +55,9 @@ collections:
                   label: Form,
                   name: form,
                   widget: object,
-                  fields: [{ label: Title, name: title, widget: string }, { label: Subtitle, name: subtitle, widget: text }],
+                  fields:
+                    [
+                      { label: Title, name: title, widget: string },
+                      { label: Subtitle, name: subtitle, widget: text },
+                    ],
                 }
