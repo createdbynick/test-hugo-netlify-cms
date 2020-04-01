@@ -24,5 +24,7 @@ collections:
             widget: "object"
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Paragraph, name: paragraph, widget: list, fields:
+              - {label: Copy Set One, name: copySetOne, widget: list, fields:
+                [{label: Text, name: text, widget: text}]}
+              - {label: Copy Set Two, name: copySetTwo, widget: list, fields:
                 [{label: Text, name: text, widget: text}]}
