@@ -71,3 +71,13 @@ collections:
                       { label: author, name: author, widget: string }
                     ],
                 }
+          - label: "Product"
+            name: "product"
+            widget: "object"
+            fields:
+              - { label: Base One, name: baseTwo, widget: markdown }
+              - { label: Base Two, name: baseThree, widget: markdown }
+              - { label: Base Three, name: baseFour, widget: markdown }
+              - { label: Base Four, name: baseFive, widget: markdown }
+              - { label: Quote, name: quote, widget: text }
+              
