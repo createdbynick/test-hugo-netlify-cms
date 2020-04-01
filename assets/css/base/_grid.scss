@@ -67,6 +67,10 @@ $breakpoint-large: 744px;
     max-width: 100%;
     min-width: 0;
     padding: 0 $base-unit 0 $base-unit;
+
+    .l-col-smallgutter {
+        padding: 0;
+    }
 }
 
 // Column vertical alignment, top.

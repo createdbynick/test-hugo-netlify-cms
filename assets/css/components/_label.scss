@@ -2,7 +2,7 @@
     background-color: $label-color-default;
     border-radius: $label-border-radius;
     display: inline-block;
-    font-size: $font-size-small;
+    font-size: $font-size-xsmall;
     padding: $spacer-1 $spacer-2;
 
     &:not(:last-of-type) {
@@ -25,6 +25,21 @@
 
     &--tertiary {
         background-color: $label-color-tertiary;
+        color: $color-tertiary;
+    }
+
+    &--success {
+        background-color: $label-color-success;
+        color: $color-primary;
+    }
+
+    &--warning {
+        background-color: $label-color-warning;
+        color: $color-secondary;
+    }
+
+    &--danger {
+        background-color: $label-color-danger;
         color: $color-tertiary;
     }
 }

@@ -37,6 +37,7 @@ columnRight:
       CyberStart Game is a challenging, rewarding, and detailed intro to hacking, programming, and forensics.
     author: Jason Smith, previous CyberStart Student
 product:
+  title: Over 200 challenges across four exciting bases for you to explore and learn through
   baseOne: 
     title: HQ Base
     text: Tackle cyber-criminal gangs by gathering information about them, cracking codes, and dissecting their digital trail.

@@ -280,7 +280,7 @@ $input-valid-border-color: map-get($color-map, green);
 $input-invalid-border-color: map-get($color-map, red);
 
 // Labels
-$label-text-transform: uppercase;
+$label-text-transform: normal;
 
 $label-border-radius: 20px;
 
@@ -288,6 +288,9 @@ $label-color-default: map-get($color-map-gray, 70);
 $label-color-primary: $color-primary-light;
 $label-color-secondary: $color-secondary-light;
 $label-color-tertiary: $color-tertiary-light;
+$label-color-success: map-get($color-map, green);
+$label-color-warning: map-get($color-map, yellow);
+$label-color-danger: map-get($color-map, red);
 
 // Alerts
 $alert-theme: default; // default | fill | shadow

@@ -87,17 +87,32 @@
 
 </div>
 
-<div class="c-paper c-paper--background-wave-top">
+<div class="c-paper">
     <div class="c-heading">
-        <h2>Over 200 challenges across four exciting bases for you to explore and learn through</h2>
+        <h2>{{ .Params.product.title }}</h2>
     </div>
 
     <div class="l-grid">
         <div class='l-col l-col-lg'>
-            <div class="c-well h-mb-8">
-                <h3 class="h-f-sm">{{ .Params.product.baseOne.title }}</h3>
+            
+            <div class="o-base-summary h-mb-8">
+                <div class="o-base-summary__title">{{ .Params.product.baseOne.title }}</div>
+                <div class="o-base-summary__description">
+                    <p>{{ .Params.product.baseOne.text }}</p>
+                </div>
 
-                <p class="h-f-sm">{{ .Params.product.baseOne.text }}</p>
+
+                <div class="o-base-summary__stats">
+                    <div class="o-base-summary__stat">
+                        Easy: 30%
+                    </div>
+                    <div class="o-base-summary__stat">
+                        Medium: 30%
+                    </div>
+                    <div class="o-base-summary__stat">
+                        Hard: 30%
+                    </div>
+                </div>
             </div>
 
             <div class="c-well h-mb-8">
@@ -139,13 +154,13 @@
     </div>
 
     <div class="l-grid">
-        <div class='l-col col-md'>
+        <div class='l-col col-lg'>
             {{ range .Params.homeschooling.copySetOne }}
                 <p>{{ .text }}</p>
             {{ end }}
         </div>
 
-        <div class='l-col l-col-md'>
+        <div class='l-col l-col-lg'>
             {{ range .Params.homeschooling.copySetTwo }}
                 <p>{{ .text }}</p>
             {{ end }}
@@ -153,7 +168,7 @@
     </div>
 
     <div class="l-grid l-grid-center h-mt-8">
-        <div class="l-col l-col-9">
+        <div class="l-col l-col-9 l-col-md">
             <p class="h-text-center">{{ .Params.homeschooling.criteria }}</p>
         </div>
 
@@ -161,7 +176,7 @@
             <button class="c-btn c-btn--large c-btn--primary">Reserve your place</button>
         </div>
 
-        <div class="l-col l-col-8 h-text-center h-mt-8">
+        <div class="l-col l-col-8 l-col-md h-text-center h-mt-8">
             <small>{{ .Params.homeschooling.previousUsers }}</small>
         </div>
     </div>
