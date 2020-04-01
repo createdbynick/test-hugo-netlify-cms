@@ -4,7 +4,7 @@ header:
   subTitle: >-
     Learn how to crack codes, find security flaws and dissect criminals digital
     trails for free with CyberStart Game
-leftColumn:
+columnLeft:
   title: Play CyberStart Game on demand at the Virtual Cyber School
   text:
     - paragraph: Hello
@@ -31,7 +31,7 @@ leftColumn:
   copySetTwo:
     - text: >-
         Enrol to the Virtual Cyber School and you will be provided with a FREE CyberStart Game license. With this, you'll be able to explore and have a go at over 200 cyber security challenges. Plus, you will be invited to join cyber security expert, James Lyne, for live webinars where he will use CyberStart Game to teach security disciplines such as digital forensics, cryptography and Linux.
-rightColumn:
+columnRight:
   well:
     text: If you are a UK resident aged 13-18, or have a child or student in this age bracket and are interested in applying for a FREE CyberStart Game license, please enter your details below and we will email you when our application stage opens shortly. Places are limited so make sure you reserve your place today!
   form:

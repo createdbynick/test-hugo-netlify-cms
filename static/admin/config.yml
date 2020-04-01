@@ -26,14 +26,24 @@ collections:
             name: "header"
             widget: "object"
             fields:
-              - {label: Header Title, name: headerTitle, widget: text}
-              - {label: Header Subtitle, name: headerSubtitle, widget: text}
+              - {label: Header Title, name: title, widget: text}
+              - {label: Header Subtitle, name: subTitle, widget: text}
           - label: "Column Left"
-            name: "leftColumn"
+            name: "columnLeft"
             widget: "object"
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Paragraph, name: paragraph, widget: list, fields:
+              - {label: Copy Set One, name: copySetOne, widget: list, fields:
+                [{label: Text, name: text, widget: text}]}
+              - {label: Quote, name: quote, widget: string}
+              - {label: Copy Set Two, name: copySetTwo, widget: list, fields:
+                [{label: Text, name: text, widget: text}]}
+          - label: "Column Right"
+            name: "columnRight"
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Copy Set One, name: copySetTwo, widget: list, fields:
                 [{label: Text, name: text, widget: text}]}
               - {label: Quote, name: quote, widget: string}
               
