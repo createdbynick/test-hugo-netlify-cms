@@ -23,8 +23,15 @@ collections:
             name: "columnLeft"
             widget: "object"
             fields:
-              - {label: Title, name: title, widget: string}
+              - {label: Title, name: title, widget: text}
               - {label: Copy Set One, name: copySetOne, widget: list, fields:
                 [{label: Text, name: text, widget: text}]}
               - {label: Copy Set Two, name: copySetTwo, widget: list, fields:
                 [{label: Text, name: text, widget: text}]}
+          - label: "Column Right"
+            name: "columnRight"
+            widget: "object"
+            fields:
+              - {label: Criteria, name: criteria, widget: text}
+              - {label: Form, name: form, widget: object, fields:
+                [{label: Title, name: title, widget: string}]}
