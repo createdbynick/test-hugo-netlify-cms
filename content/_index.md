@@ -1,7 +1,7 @@
 ---
 header:
-  headerTitle: Virtual Summer School
-  headerSubtitle: >-
+  title: Virtual Summer School
+  subtitle: >-
     Learn how to crack codes, find security flaws and dissect criminals digital
     trails for free with CyberStart Game
 columnLeft:
