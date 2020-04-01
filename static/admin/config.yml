@@ -23,35 +23,6 @@ collections:
             name: "columnLeft"
             widget: "object"
             fields:
-<<<<<<< HEAD
-              - { label: Title, name: title, widget: string }
-              - {
-                  label: Copy Set One,
-                  name: copySetOne,
-                  widget: list,
-                  fields: [{ label: Text, name: text, widget: text }],
-                }
-              - { label: Quote, name: quote, widget: string }
-              - {
-                  label: Copy Set Two,
-                  name: copySetTwo,
-                  widget: list,
-                  fields: [{ label: Text, name: text, widget: text }],
-                }
-          - label: "Column Right"
-            name: "columnRight"
-            widget: "object"
-            fields:
-              - { label: Title, name: title, widget: string }
-              - {
-                  label: Copy Set One,
-                  name: copySetTwo,
-                  widget: list,
-                  fields: [{ label: Text, name: text, widget: text }],
-                }
-=======
               - {label: Title, name: title, widget: string}
               - {label: Paragraph, name: paragraph, widget: list, fields:
                 [{label: Text, name: text, widget: text}]}
->>>>>>> parent of d2a4fc4... Additional field CMS
-              
