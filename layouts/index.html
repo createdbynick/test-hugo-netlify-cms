@@ -10,11 +10,11 @@
     </div>
 
     <div class="c-header__title">
-        <h1>{{ .Params.header.title }}</h1>
+        <h1>{{ .Params.header.headerTitle }}</h1>
     </div>
 
     <div class="c-header__subtitle">
-        <p>{{ .Params.header.subTitle }}</p>
+        <p>{{ .Params.header.headerSubtitle }}</p>
     </div>
 
     <div class="c-header__action">
@@ -28,31 +28,28 @@
         <div class='l-col l-col-lg'>
             <h2>{{ .Params.columnLeft.title }}</h2>
             
-            {{ range .Params.columnLeft.copySetOne }}
-            <p>{{ .text }}</p>
+            {{ range .Params.leftColumn.paragraph }}
+                <p>{{ .text }}</p>
             {{ end }}
 
             <div class="c-quote h-my-10">
-                <p class="c-quote__text">{{ .Params.columnLeft.quote.text }}</p>
-            
-                <p class="c-quote__author">{{ .Params.columnLeft.quote.author }}</p>
-            </div>
-            
-            {{ range .Params.columnLeft.copySetOne }}
-            <p>{{ .text }}</p>
-            {{ end }}
+                <p class="c-quote__text">{{ .Params.leftColumn.quote.text }}</p>
 
+                <p class="c-quote__author">{{ .Params.leftColumn.quote.author }}</p>
+            </div>
+
+            {{ .Params.leftColumn.paragraphTwo }}
         </div>
         <div class='l-col l-col-lg'>
             <div class="c-well h-mb-8">
-                <p class="h-f-sm">{{ .Params.columnRight.well.text }}</p>
+                <p class="h-f-sm">If you are a UK resident aged 13-18, or have a child or student in this age bracket and are interested in applying for a FREE CyberStart Game license, please enter your details below and we will email you when our application stage opens shortly. Places are limited so make sure you reserve your place today!</p>
             </div>
 
             <div class="c-well c-well--primary">
                 <form>
-                    <h2 class="h-f-xl h-mb-3">{{ .Params.columnRight.form.title }}</h2>
+                    <h2 class="h-f-xl h-mb-3">Reserve your place</h2>
 
-                    <small class="h-mb-3 h-d-block h-f-xs">{{ .Params.columnRight.form.subTitle }}</small>
+                    <small class="h-mb-3 h-d-block h-f-xs">Already playing CyberStart Game with Cyber Discovery? No need to apply. We'll be extending your access over summer!</small>
 
                     <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="A61C50BEC994754B1D79C5819EC1255CE2CDD55AE3A570FE0C99808BAAFF559F985B8924345E5ACEAC07C4AD04C24FCFB2036ED8FB86858827F4B59E2D5A6E82">
                         <div class="c-form-item">
@@ -78,10 +75,10 @@
                 <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
 
-            <div class="c-quote h-my-10">
-                <p class="c-quote__text">{{ .Params.columnRight.quote.text }}</p>
-            
-                <p class="c-quote__author">{{ .Params.columnRight.quote.author }}</p>
+            <div class="c-quote h-mt-8">
+                <p class="c-quote__text">CyberStart Game is a challenging, rewarding, and detailed intro to hacking, programming, and forensics.</p>
+
+                <p class="c-quote__author">Jason Smith, previous CyberStart Student</p>
             </div>
         </div>
     </div>
