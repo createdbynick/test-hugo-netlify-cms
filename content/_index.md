@@ -32,4 +32,8 @@ columnRight:
   form:
     title: Reserve your place
     subtitle: Already playing CyberStart Game with Cyber Discovery? No need to apply. We'll be extending your access over summer!
+  quote:
+    text: >-
+      CyberStart Game is a challenging, rewarding, and detailed intro to hacking, programming, and forensics.
+    author: Jason Smith, previous CyberStart Student
 ---
