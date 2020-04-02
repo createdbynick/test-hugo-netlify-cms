@@ -9,6 +9,7 @@
     transition: .2s ease-in-out;
     box-shadow: 0 2px 5px map-get($color-map-gray, 90);
 
+    // Icon.
     &__icon {
         position: absolute;
         top: -45px;
@@ -16,6 +17,7 @@
         width: 72px;
     }
 
+    // Title.
     &__title {
         margin-bottom: $spacer-3;
         font-size: $font-size-small;
@@ -23,24 +25,27 @@
         color: map-get($color-map, black);
     }
 
+    // Description.
     &__description {
         p {
             font-size: $font-size-small;
         }
     }
 
+    // Stats.
     &__stats {
         display: flex;
         flex-direction: row;
     }
 
+    // Stat.
     &__stat {
-        flex-grow: 1;
         margin-right: $spacer-3;
         padding: $spacer-1 $spacer-4;
         font-size: $font-size-xsmall;;
         border-radius: $border-radius-large;
 
+        // Stat, easy difficulty.
         &--easy {
             position: relative;
 
@@ -56,6 +61,7 @@
             }
         }
 
+        // Stat, medium difficulty.
         &--medium {
             position: relative;
 
@@ -71,6 +77,7 @@
             }
         }
 
+        // Stat, hard difficulty.
         &--hard {
             position: relative;
 
@@ -83,6 +90,22 @@
                 height: 10px;
                 border-radius: 100%;
                 background-color: map-get($color-map, red);;
+            }
+        }
+
+        // Stat, extreme difficulty.
+        &--extreme {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: calc(50% - 5px);
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: map-get($color-map, red-dark);;
             }
         }
 
