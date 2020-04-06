@@ -1,0 +1,142 @@
+/* ----- MODULE_CAROUSEL.scss ----- */
+
+// Carousel.
+.m-carousel {
+    position: relative;
+
+    &__navigation {
+        position: absolute;
+        width: 100px;
+        bottom: 70px;
+        right: 20px;
+        z-index: 1;
+
+        // Responsive.
+        @media screen and (min-width: $breakpoint-large) {
+            width: 100%;
+            bottom: 50%;
+            left: 0;
+        }
+
+        // Btn, carousel.
+        .btn-carousel {
+            background: map-get($color-map, grey);
+            background-repeat: no-repeat;
+            background-size: 16px;
+            cursor: pointer;
+            height: 45px;
+            width: 45px;
+            position: absolute;
+            border-radius: 100%;
+
+            // Btn carousel, states.
+            &:visited,
+            &:focus,
+            &:link,
+            &:active {
+                background-color: map-get($color-map, aqua);
+            }
+
+            // Responsive.
+            @media screen and (min-width: $breakpoint-large) {
+                height: 70px;
+                width: 70px;
+                background: map-get($color-map, black);
+                background-repeat: no-repeat;
+                background-size: 16px;
+            }
+
+            // Btn carousel, previous.
+            &.prev {
+                background-image: url(../media/images/ui-icon-arrow-left.png);
+                background-position: center center;
+                left: 0;
+
+                // Responsive.
+                @media screen and (min-width: $breakpoint-large) {
+                    left: -35px;
+                }
+            }
+
+            // Btn carousel, next.
+            &.next {
+                background-image: url(../media/images/ui-icon-arrow-right.png);
+                background-position: center center;
+                right: 0;
+
+                // Responsive.
+                @media screen and (min-width: $breakpoint-large) {
+                    right: -35px;
+                }
+            }
+        }
+    }
+
+    // Carousel, item.
+    &__item {
+        overflow: hidden;
+        position: relative;
+        border-radius: $border-radius;
+    }
+
+    // Content block.
+    &__content-block {
+        max-width: 300px;
+        padding: 20px;
+        position: absolute;
+        background: map-get($color-map, black);
+        color: map-get($color-map, white);
+        border-radius: $border-radius;
+
+        // Common position value variable.
+        $content-block-position: 25px;
+
+        // Position content block, top left.
+        &--top-left {
+            left: $content-block-position;
+            top: $content-block-position;
+        }
+
+        // Position content block, top right.
+        &--top-right {
+            right: $content-block-position;
+            top: $content-block-position;
+        }
+
+        // Position content block, bottom right.
+        &--bottom-right {
+            bottom: $content-block-position;
+            right: $content-block-position;
+        }
+
+        // Position content block, bottom left.
+        &--bottom-left {
+            bottom: $content-block-position;
+            left: $content-block-position;
+        }
+
+        // Responsive.
+        @media screen and (max-width: $breakpoint-medium) {
+            height: 250px;
+            max-width: 100%;
+            position: relative;
+            font-size: $font-size-base;
+
+            &--top-left,
+            &--top-right,
+            &--bottom-right,
+            &--bottom-left {
+                left: 0;
+                top: 0;
+                border-radius: 0;
+            }
+        }
+    }
+
+    // Content block, pagination.
+    &__pagination {
+        color: map-get($color-map, white);
+        font-size: $font-size-base;
+        margin-top: 10px;
+    }
+}

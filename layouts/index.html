@@ -27,9 +27,9 @@
     <div class="l-grid">
         <div class='l-col l-col-lg'>
             <h2>{{ .Params.columnLeft.title }}</h2>
-            
+
             {{ range .Params.columnLeft.copySetOne }}
-                <p>{{ .text }}</p>
+            <p>{{ .text }}</p>
             {{ end }}
 
             <div class="c-quote h-my-10">
@@ -39,7 +39,7 @@
             </div>
 
             {{ range .Params.columnLeft.copySetTwo }}
-                <p>{{ .text }}</p>
+            <p>{{ .text }}</p>
             {{ end }}
         </div>
         <div class='l-col l-col-lg'>
@@ -94,7 +94,7 @@
 
     <div class="l-grid">
         <div class='l-col l-col-lg'>
-            
+
             <div class="m-base-summary h-mb-15">
                 <div class="m-base-summary__icon">
                     <img src="media/images/ui-icon-base-hq.png">
@@ -123,7 +123,7 @@
                 <div class="m-base-summary__icon">
                     <img src="media/images/ui-icon-base-moon.png">
                 </div>
-                
+
                 <div class="m-base-summary__title">{{ .Params.product.baseTwo.title }}</div>
 
                 <div class="m-base-summary__description">
@@ -196,7 +196,7 @@
         <div class="l-col l-col-9 l-col-lg">
             <div class="c-quote h-mt-5">
                 <p class="c-quote__text">{{ .Params.product.quote.text }}</p>
-        
+
                 <p class="c-quote__author">{{ .Params.product.quote.author }}</p>
             </div>
         </div>
@@ -208,18 +208,95 @@
         <h2>{{ .Params.homeschooling.title }}</h2>
     </div>
 
-    <div class="l-grid">
+    <div class="l-grid h-mb-10">
         <div class='l-col col-lg'>
             {{ range .Params.homeschooling.copySetOne }}
-                <p>{{ .text }}</p>
+            <p>{{ .text }}</p>
             {{ end }}
         </div>
 
         <div class='l-col l-col-lg'>
             {{ range .Params.homeschooling.copySetTwo }}
-                <p>{{ .text }}</p>
+            <p>{{ .text }}</p>
             {{ end }}
         </div>
+    </div>
+
+    <div class="c-heading">
+        <h2>How does CyberStart Game work?</h2>
+    </div>
+
+    <div class="m-carousel">
+
+        <div class="m-carousel__navigation">
+            <div class="btn-carousel prev"></div>
+
+            <div class="btn-carousel next"></div>
+        </div>
+
+        <div class="m-carousel__items">
+            <div class="m-carousel__item">
+                <img src="media/images/slide-1.png">
+
+                <div class="m-carousel__content-block m-carousel__content-block--top-left">
+                    CyberStart Game features hundreds of challenges split over different bases, such as Moon
+                    Base and Forensics Base.
+                    <div class="m-carousel__pagination">
+                        1/5
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-carousel__item">
+                <img src="media/images/slide-2.png">
+
+                <div class="m-carousel__content-block m-carousel__content-block--top-left">
+                    Students will take on the role of a security agent, gathering information, cracking
+                    codes,
+                    finding security flaws and dissecting a cyber criminal’s digital trail, using our
+                    in-tool resources, working together and researching techniques.
+                    <div class="m-carousel__pagination">
+                        2/5
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-carousel__item">
+                <img src="media/images/slide-3.png">
+
+                <div class="m-carousel__content-block m-carousel__content-block--bottom-left">
+                    Learn disciplines such as Linux, cryptography and programming in a bid to stop cyber
+                    criminals in their tracks.
+                    <div class="m-carousel__pagination">
+                        3/5
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-carousel__item">
+                <img src="media/images/slide-4.png">
+
+                <div class="m-carousel__content-block m-carousel__content-block--bottom-right">
+                    Students will be equiped with a field manual to help guide them through over half of the
+                    levels and also function as a useful reference.
+                    <div class="m-carousel__pagination">
+                        4/5
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-carousel__item">
+                <img src="media/images/slide-5.png">
+
+                <div class="m-carousel__content-block m-carousel__content-block--bottom-left">
+                    Accomplishments won't go unnoticed! Students will earn exciting badges as they work their way through CyberStart Game.
+                    <div class="m-carousel__pagination">
+                        5/5
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="l-grid l-grid-center h-mt-8">
